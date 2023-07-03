@@ -1,24 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import './style/style.scss'
+import Header from "./components/header/header";
+import Footer from "./components/footer/footer";
+import {Routes, Route} from "react-router-dom";
+import Contact from "./page/home/contact/contact";
+import Front from "./page/front/front";
+import Backend from "./page/backend/backend";
+import Ux from "./page/ux/ux";
+import Flutter from "./page/flutter/flutter";
+import Home from "./page/home/home";
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <>
+          <Header/>
+          <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/front" element={<Front/>}/>
+            <Route path="/backend" element={<Backend/>}/>
+            <Route path="/ux" element={<Ux/>}/>
+            <Route path="/flutter" element={<Flutter/>}/>
+          </Routes>
+          <Contact/>
+          <Footer/>
+      </>
   );
 }
 
