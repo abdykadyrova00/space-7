@@ -9,13 +9,20 @@ import Backend from "./page/backend/backend";
 import Ux from "./page/ux/ux";
 import Flutter from "./page/flutter/flutter";
 import Home from "./page/home/home";
+import {IntlProvider} from "react-intl";
+import {MESSAGES} from "./react-intl/messages";
+import {useSelector} from "react-redux";
 
 
 
 
 function App() {
-  return (
+    const locale = useSelector(state => state.main.locale)
+
+    return (
       <>
+          <IntlProvider locale={locale} messages={MESSAGES[locale]}>
+
           <Header/>
           <Routes>
             <Route path="/" element={<Home/>}/>
@@ -26,6 +33,7 @@ function App() {
           </Routes>
           <Contact/>
           <Footer/>
+          </IntlProvider>
       </>
   );
 }

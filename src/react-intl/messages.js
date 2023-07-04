@@ -1,10 +1,8 @@
-// import {LOCALES} from "./locales";
+import {LOCALES} from "./locales";
 // import {Hero} from "./messages/hero";
 // import {Header} from "./messages/header";
-// import {Quastion} from "./messages/quastion";
 // import {Front} from "./messages/front";
 // import {Contact} from "./messages/contact";
-// import Quastion from "../page/home/quastion/quastion";
 // import Students from "../page/home/students/students";
 // import {Ux} from "./messages/ux"
 // import {Flutter} from "./messages/flutter";
@@ -12,7 +10,9 @@
 // import Mentors from "../page/home/mentors/mentors";
 // import About from "../page/home/about/about";
 // import Review from "../page/home/review/review";
-// import Course from "../page/home/course/course";
+import Course from "../page/home/course/course";
+
+
 
 export const MESSAGES = {
     [LOCALES.KYRGYZ]: {
@@ -20,7 +20,7 @@ export const MESSAGES = {
         // ...Header[LOCALES.KYRGYZ],
         // ...Contact[LOCALES.KYRGYZ],
         // // ...About[LOCALES.KYRGYZ],
-        // // ...Course[LOCALES.KYRGYZ],
+        ...Course[LOCALES.KYRGYZ],
         // // ...Mentors[LOCALES.KYRGYZ],
         // ...Quastion[LOCALES.KYRGYZ],
         // // ...Review[LOCALES.KYRGYZ],
@@ -35,7 +35,7 @@ export const MESSAGES = {
         // ...Header[LOCALES.RUSSIAN],
         // ...Contact[LOCALES.RUSSIAN],
         // // ...About[LOCALES.RUSSIAN],
-        // // ...Course[LOCALES.RUSSIAN],
+        ...Course[LOCALES.RUSSIAN],
         // // ...Mentors[LOCALES.RUSSIAN],
         // ...Quastion[LOCALES.RUSSIAN],
         // // ...Review[LOCALES.RUSSIAN],
