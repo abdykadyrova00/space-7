@@ -45,10 +45,15 @@ const Header = () => {
                         </label>
                      <div className="menu__box">
                          <div className="lang">
-                             <BsGlobeCentralSouthAsia/>
-                             <a href="#" onClick={(e) => dispatch(setLocale(LOCALES.KYRGYZ))} >KG</a>
-
-                             <a href="#" onClick={(e) => dispatch(setLocale(LOCALES.RUSSIAN))} >RU</a>
+                             <div>
+                                 <BsGlobeCentralSouthAsia/>
+                                 <a className={locale === "kg" ? "active2" : null}
+                                    onClick={(e) => dispatch(setLocale(LOCALES.KYRGYZ))}>KG</a>
+                                 /
+                                 <a className={locale === "ru" ? "active2" : null}
+                                    onClick={(e) => dispatch(setLocale(LOCALES.KYRGYZ))} >RU</a>
+                             </div>
+                             <div className="border"/>
                          </div>
                          <ul>
                              <li><a className="menu__item" href="#">Главная</a></li>
@@ -56,6 +61,14 @@ const Header = () => {
                              <li><a className="menu__item" href="#">Курсы</a></li>
                              <li><a className="menu__item" href="#">Отзывы</a></li>
                          </ul>
+                         <div className="sms">
+                             <span>Социальные сети:</span>
+                             <div>
+                                 <p>What’s App</p>
+                                 <p>Instagram</p>
+                                 <p>Позвонить</p>
+                             </div>
+                         </div>
                      </div>
 
                     </div>

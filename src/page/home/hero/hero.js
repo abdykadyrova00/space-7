@@ -1,6 +1,9 @@
 import React from 'react';
+import {useIntl} from "react-intl";
 
 const Hero = () => {
+    const { formatMessage } = useIntl();
+
     return (
         <section id="hero">
             <div className="container">

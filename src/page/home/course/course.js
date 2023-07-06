@@ -5,7 +5,7 @@ import ux from "./../../../assets/img/ux.svg"
 import sale from "./../../../assets/img/sale.svg"
 import back from "./../../../assets/img/back.svg"
 import flutter from "./../../../assets/img/flutter.svg"
-import {Link, Route} from "react-router-dom";
+import {Link} from "react-router-dom";
 import {useIntl} from "react-intl";
 
 const Course = () => {
@@ -18,7 +18,7 @@ const Course = () => {
                     <h1>Курсы</h1>
                     <div className="course--courseFlex">
                         <div className="course--courseFlex__cour">
-                            <h3>{formatMessage({"id": "direction"})}</h3>
+                            <h3>Все направлении</h3>
                             <label htmlFor="front"><p> Front-End develop</p></label>
                             <label htmlFor="back"><p> Back-End develop</p></label>
                             <label htmlFor="ux"><p>UX/UI Design</p></label>
@@ -35,7 +35,7 @@ const Course = () => {
                                     <div className="course--courseFlex__blocks--front__cards__cont">
                                         <button>Курс</button>
                                         <h2>Front-End</h2>
-                                        <p>{formatMessage({"id":"front"})}</p>
+                                        <p>{formatMessage({id:"front"})}</p>
                                     </div>
                                     <div className="course--courseFlex__blocks--front__cards__logoJs">
                                         <div className="course--courseFlex__blocks--front__logoJs--js">
