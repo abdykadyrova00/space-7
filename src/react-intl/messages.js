@@ -10,7 +10,7 @@ import {LOCALES} from "./locales";
 // import Mentors from "../page/home/mentors/mentors";
 // import About from "../page/home/about/about";
 // import Review from "../page/home/review/review";
-import Course from "../page/home/course/course";
+import { Course } from "../react-intl/messages/course";
 
 
 

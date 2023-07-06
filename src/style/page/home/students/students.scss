@@ -106,3 +106,54 @@
   }
 }
 
+
+@media (max-width: 992px) {
+  .student{
+    &__card{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__cards{
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .student{
+    &__card{
+      &--block{
+        img{
+          width: 90%;
+        }
+        &__text{
+          display: flex;
+          justify-content: space-around;
+          &--cardBlock2{
+            //position: absolute;
+            //bottom: 50px;
+            //left: 300px !important;
+            //right: 300px;
+            text-align: right;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+
+1440
+1200
+1024
+992
+768
+576
+450
+425
+400
+375
+

@@ -5,7 +5,7 @@ import ux from "./../../../assets/img/ux.svg"
 import sale from "./../../../assets/img/sale.svg"
 import back from "./../../../assets/img/back.svg"
 import flutter from "./../../../assets/img/flutter.svg"
-import {Link, Route} from "react-router-dom";
+import {Link} from "react-router-dom";
 import {useIntl} from "react-intl";
 
 const Course = () => {
