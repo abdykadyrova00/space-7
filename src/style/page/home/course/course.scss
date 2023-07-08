@@ -3,7 +3,7 @@
   padding-bottom: 30px;
   .course {
     h1 {
-      padding-top: 241px;
+      padding-top: 141px;
       color: #1E1E2F;
       font-size: 38px;
       font-weight: 700;
@@ -179,7 +179,7 @@
   display: none;
 }
 
-@media screen and  (max-width: 800px){
+@media screen and  (max-width: 992px){
   #course {
     .course--courseFlex__blocks {
       flex-direction: column;
@@ -193,7 +193,7 @@
   }
 }
 
-@media screen and  (max-width: 620px){
+@media screen and  (max-width: 768px){
   #course {
     .course{
       &--courseFlex{

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Accordion from "../../components/accordion/accordion";
 import brat1 from './../../assets/img/brat.svg'
 import in_img from './../../assets/img/in_img.svg'
@@ -14,6 +14,10 @@ import fon from './../../assets/img/fon.jpg'
 
 
 const Backend = () => {
+    useEffect(() => {
+        window.scroll(0, 0)
+    }, [])
+
     return (
         <section id="backend">
             <div className="detail_page">

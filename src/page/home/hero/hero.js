@@ -8,11 +8,10 @@ const Hero = () => {
         <section id="hero">
             <div className="container">
                 <div className="hero">
-                    <h1>Ваше будущее начинается сегодня</h1>
-                    <p>Курсы по программированию в Бишкеке
-                        Обучаем с нуля до гарантированной стажировки за 7 месяцев!</p>
+                    <h1>{formatMessage({"id":"hero"})}</h1>
+                    <p>{formatMessage({"id":"hero_des"})}</p>
 
-                    <button>Связаться</button>
+                    <button>{formatMessage({"id":"btn_hero"})}</button>
                 </div>
             </div>
         </section>

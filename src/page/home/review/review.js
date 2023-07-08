@@ -5,14 +5,12 @@ import ellipse3 from "./../../../assets/img/ellipse3.png"
 import ellipse4 from "./../../../assets/img/ellipse4.png"
 import Slider from "react-slick";
 const Review = () => {
-
-    const settings = {
+    let settings = {
         dots: true,
-        infinite: true,
+        infinite: false,
         speed: 500,
-        autoplay:true,
-        slidesToShow: 4,
-        slidesToScroll: 4,
+        slidesToShow: 3,
+        slidesToScroll: 3,
         initialSlide: 0,
         responsive: [
             {
@@ -41,6 +39,7 @@ const Review = () => {
             }
         ]
     };
+
     return (
         <section id="review">
             <div className="container">

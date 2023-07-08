@@ -11,6 +11,7 @@ import {BsGlobeCentralSouthAsia} from "react-icons/bs";
 
 const Header = () => {
 
+
     const locale = useSelector((state) => state.main.locale);
 
     const dispatch = useDispatch();
@@ -30,6 +31,11 @@ const Header = () => {
         changeBackground();
         window.addEventListener("scroll", changeBackground);
     });
+
+    useEffect(() => {
+        window.scroll(0, 0)
+    }, [])
+
 
     return (
         <header id="header">
@@ -55,18 +61,19 @@ const Header = () => {
                              </div>
                              <div className="border"/>
                          </div>
-                         <ul>
-                             <li><a className="menu__item" href="#">Главная</a></li>
-                             <li><a className="menu__item" href="#">О нас</a></li>
-                             <li><a className="menu__item" href="#">Курсы</a></li>
-                             <li><a className="menu__item" href="#">Отзывы</a></li>
-                         </ul>
+                         <div>
+                             <a className="menu__item" href="#">{formatMessage({id:"home"})}</a>
+                             <a className="menu__item" href="#">{formatMessage({id:"about"})}</a>
+                             <a className="menu__item" href="#">{formatMessage({id:"course"})}</a>
+                             <a className="menu__item" href="#">{formatMessage({id:"rew"})}</a>
+                         </div>
+
                          <div className="sms">
-                             <span>Социальные сети:</span>
+                             <span>{formatMessage({"id":"set"})}</span>
                              <div>
-                                 <p>What’s App</p>
-                                 <p>Instagram</p>
-                                 <p>Позвонить</p>
+                                 <a className="menu__item" href="#">What’s App</a>
+                                 <a className="menu__item" href="#">Instagram</a>
+                                 <a className="menu__item" href="#">Позвонить</a>
                              </div>
                          </div>
                      </div>
