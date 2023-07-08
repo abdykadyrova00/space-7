@@ -35,9 +35,12 @@ const Contact = () => {
                         </div>
 
                     </div>
+                    <div className="contact--div__button">
                         <a href="https://goo.gl/maps/njFSQs4ks5ftdWbR6?coh=178572&entry=tt">
                             <button> <BsFillCursorFill style={{width:"40px", color:"blue"}}/> Открыть карту</button>
                         </a>
+                    </div>
+
                 </div>
                 </div>
             </div>

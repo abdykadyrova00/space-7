@@ -4,7 +4,7 @@ import { useIntl} from "react-intl";
 import icon1 from "./../../../assets/img/icon1.png"
 import icon2 from "./../../../assets/img/icon2.png"
 import icon3 from "./../../../assets/img/icon3.png"
-// import video from "../../../assets/video/video.mp4";
+import video from "../../../assets/video/video.mp4";
 
 
 const About = () => {
@@ -79,113 +79,104 @@ const About = () => {
 
     return (
 
-        <div id="about" className="about">
+        <section id="about">
             <div className="container">
-                <div className="text">
-                    <div className="title">
-                        {/*{formatMessage({id: "au_title"})}*/}
-                        “Мы не можем изменить
+                <div className="about">
+                    <div className="about--text">
+                        <h1>
+                            “Мы не можем изменить
                             прошлое, но мы можем
                             создать будущее”
+                        </h1>
+                        <p>
+                            Наша цель - помочь студентам научиться
+                            программированию. Наши курсы подходят для всех -
+                            от начинающих до продвинутых программистов
+                        </p>
+
                     </div>
 
-                    <div className="subtitle">
-                        {/*{formatMessage({id: "au_subtitle"})}*/}
-                        Наша цель - помочь студентам научиться
-                        программированию. Наши курсы подходят для всех -
-                        от начинающих до продвинутых программистов
+                    <div className="about--video">
+                        <div className="about--video__text">
+                            <div className="icon">
+                                <div className="left">
+                                        <img src={icon1} alt="" />
+                                        <div className="border_left"></div>
+                                        <img src={icon2} alt="" />
+                                        <div className="border_left"></div>
+                                        <img src={icon3} alt="" />
+                                </div>
+
+                                <div className="info">
+                                    <div>
+                                    <h2>
+                                        C нуля до Junior
+                                    </h2>
+
+                                    <p>
+                                        Обучись и стань Junior разработчиком!
+                                    </p>
+                                   </div>
+
+
+                                    <div>
+                                    <h2>
+                                        Трудоустройство
+                                    </h2>
+
+                                    <p>
+                                        Гарантировання
+                                        стажировка!
+                                    </p>
+
+                                    </div>
+
+                                    <div>
+                                    <h2>
+                                        Портфолио
+                                    </h2>
+
+                                    <p>
+                                        5 качественных проектов
+                                        к вам на портфолио
+                                    </p>
+                                </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div className="video_block">
+                            <div className="blue">
+                                <div className="card">
+                                    <div className="title" ref={blockRef}>
+                                        +{count1}
+                                    </div>
+
+                                    <div className="text">
+                                        Студентов
+                                    </div>
+                                </div>
+
+                                <div className="card">
+                                    <div className="title" ref={blockRef}>
+                                        +{count2}
+                                    </div>
+
+                                    <div className="text">
+                                        Выпускников
+                                    </div>
+                                </div>
+                            </div>
+
+                            <video src={video} muted loop autoPlay></video>
+                        </div>
                     </div>
                 </div>
 
-                <div className="video">
-                    <div className="text">
-                        <div className="card">
-                            <div className="icon">
-                                <img src={icon1} alt="" />
-                            </div>
-
-                            <div className="info">
-                                <div className="title">
-                                    {/*{formatMessage({id: "Junior_title"})}*/}
-                                    C нуля до Junior
-                                </div>
-
-                                <div className="subtitle">
-                                    {/*{formatMessage({id: "Junior_subtitle"})}*/}
-                                    Обучись и стань Junior разработчиком!
-
-                                </div>
-                            </div>
-                        </div>
-                        <div className="border_left"></div>
-                        <div className="card">
-                            <div className="icon">
-                                <img src={icon2} alt="" />
-                            </div>
-
-                            <div className="info">
-                                <div className="title">
-                                    {/*{formatMessage({id: "Employment_title"})}*/}
-                                    Трудоустройство
-                                </div>
-
-                                <div className="subtitle">
-                                    {/*{formatMessage({id: "Employment_subtitle"})}*/}
-                                    Гарантировання стажировка!
-                                </div>
-                            </div>
-                        </div>
-                        <div className="border_left"></div>
-                        <div className="card">
-                            <div className="icon">
-                                <img src={icon3} alt="" />
-                            </div>
-
-                            <div className="info">
-                                <div className="title">
-                                    {/*{formatMessage({id: "Portfolio_title"})}*/}
-                                    Портфолио
-                                </div>
-
-                                <div className="subtitle">
-                                    {/*{formatMessage({id: "Portfolio_subtitle"})}*/}
-                                    5 качественных проектов к вам на портфолио
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="video_block">
-                        <div className="blue">
-                            <div className="card">
-                                <div className="title" ref={blockRef}>
-                                    +{count1}
-                                </div>
-
-                                <div className="text">
-                                    {/*{formatMessage({id: "au_students"})}*/}
-                                    Студентов
-                                </div>
-                            </div>
-
-                            <div className="card">
-                                <div className="title" ref={blockRef}>
-                                    +{count2}
-                                </div>
-
-                                <div className="text">
-                                    {formatMessage({id: "au_alumni"})}
-
-                                    Студентов
-                                </div>
-                            </div>
-                        </div>
-
-                        {/*<video src={video} muted loop autoPlay></video>*/}
-                    </div>
-                </div>
             </div>
-        </div>
+        </section>
     );
 };
 

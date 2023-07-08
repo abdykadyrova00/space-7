@@ -13,6 +13,7 @@
     &--div{
       display: flex;
       align-items: center;
+      justify-content: space-between;
       &__group{
         div{
           display: flex;
@@ -38,18 +39,22 @@
           }
         }
       }
-      button{
-        width: 245px;
-        height: 45px;
-        border-radius: 55px;
-        background: #F8F4F1;
-        border: none;
+      &__button{
+        margin: 50px 300px 0 0;
+        button{
+          width: 245px;
+          height: 55px;
+          border-radius: 55px;
+          background: #F8F4F1;
+          border: none;
 
-        color: #1E1E2F;
-        text-align: center;;
-        font-size: 21px;
-        font-weight: 400;
+          color: #1E1E2F;
+          text-align: center;;
+          font-size: 21px;
+          font-weight: 400;
+        }
       }
+
     }
 
   }

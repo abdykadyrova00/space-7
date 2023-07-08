@@ -4,14 +4,18 @@ import ellipse2 from "./../../../assets/img/ellipse2.png"
 import ellipse3 from "./../../../assets/img/ellipse3.png"
 import ellipse4 from "./../../../assets/img/ellipse4.png"
 import Slider from "react-slick";
+
+import * as PropTypes from "prop-types";
+
+Slider.propTypes = {children: PropTypes.node};
 const Review = () => {
 
-    const settings = {
+    let settings = {
         dots: true,
         infinite: true,
         speed: 500,
-        autoplay:true,
         slidesToShow: 4,
+        autoplay:true,
         slidesToScroll: 4,
         initialSlide: 0,
         responsive: [
@@ -41,6 +45,7 @@ const Review = () => {
             }
         ]
     };
+
     return (
         <section id="review">
             <div className="container">
@@ -116,6 +121,78 @@ const Review = () => {
                         </div>
 
                     </div>
+
+                        <div className="review--group">
+                            <p>За 7 месяцев я научился очень
+                                многому. После курса они
+                                помогли найти работу в
+                                IT-Компании. Огромное спасибо
+                                ITSPACE
+                            </p>
+                            <div className="review--group__children">
+                                <img src={ellipse} alt="img"/>
+                                <div>
+                                    <h5>Жармабек</h5>
+                                    <h4>Flutter DESIGN</h4>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div className="review--group">
+                            <p>За 7 месяцев я научился очень
+                                многому. После курса они
+                                помогли найти работу в
+                                IT-Компании. Огромное спасибо
+                                ITSPACE
+                            </p>
+                            <div className="review--group__children">
+                                <img src={ellipse2} alt="img"/>
+                                <div>
+                                    <h5>Жармагул</h5>
+                                    <h4>Flutter DESIGN</h4>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div className="review--group">
+                            <p>За 7 месяцев я научился очень
+                                многому. После курса они
+                                помогли найти работу в
+                                IT-Компании. Огромное спасибо
+                                ITSPACE
+                            </p>
+                            <div className="review--group__children">
+                                <img src={ellipse3} alt="img"/>
+                                <div>
+                                    <h5>Курманкожо</h5>
+                                    <h4>Flutter DESIGN</h4>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div className="review--group">
+                            <p>За 7 месяцев я научился очень
+                                многому. После курса они
+                                помогли найти работу в
+                                IT-Компании. Огромное спасибо
+                                ITSPACE
+                            </p>
+                            <div className="review--group__children">
+                                <img src={ellipse4} alt="img"/>
+                                <div>
+                                    <h5>Жармабек</h5>
+                                    <h4>Flutter DESIGN</h4>
+                                </div>
+
+                            </div>
+
+                        </div>
                 </Slider>
                 </div>
             </div>

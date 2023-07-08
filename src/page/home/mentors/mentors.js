@@ -16,6 +16,7 @@ const Mentor = () => {
         infinite: false,
         speed: 500,
         slidesToShow: 3,
+        autoplay:true,
         slidesToScroll: 3,
         initialSlide: 0,
         responsive: [

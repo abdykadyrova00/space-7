@@ -8,21 +8,20 @@
     padding: 50px;
   }
   .review{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     &--group{
       p{
         width: 257px;
         height: 120px;
         color: #4B4B59;
-        font-size: 15px;
+        font-size: 18px;
         font-weight: 400;
+
       }
       &__children{
         display: flex;
         align-items: center;
         gap: 10px;
+        margin-top: 25px;
         div{
           h5{
             color: #1E1E2F;
