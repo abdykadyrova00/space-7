@@ -15,7 +15,7 @@ const Student = () => {
         <section id="student">
             <div className="container">
                 <div className="student">
-                    <h1 className="student--h1">Проекты наших студентов</h1>
+                    <h1 className="student--h1">{formatMessage({id:"project"})}</h1>
                 <div className="student__card">
                     <div className="student__card--block">
                         <img src={student} alt=""/>

@@ -15,6 +15,7 @@ const Mentor = () => {
         dots: true,
         infinite: false,
         speed: 500,
+        autoplay: true,
         slidesToShow: 3,
         autoplay:true,
         slidesToScroll: 3,
@@ -30,7 +31,7 @@ const Mentor = () => {
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 768,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
@@ -38,7 +39,7 @@ const Mentor = () => {
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 680,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1
@@ -52,7 +53,7 @@ const Mentor = () => {
             <div className="container">
                 <div className="mentor">
 
-                    <h1>Наши менторы</h1>
+                    <h1>{formatMessage({id:"mentors"})}</h1>
 
                     <Slider {...settings}>
 

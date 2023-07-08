@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import Accordion from "../../components/accordion/accordion";
 import brat1 from './../../assets/img/brat.svg'
@@ -12,8 +13,15 @@ import js from './../../assets/img/js.svg'
 import react from './../../assets/img/react.png'
 import fon from './../../assets/img/fon.jpg'
 
+=======
+import React, {useEffect} from 'react';
+>>>>>>> e811806b1f880f643e355b655b29bb469106017b
 
 const Flutter = () => {
+    useEffect(() => {
+        window.scroll(0, 0)
+    }, [])
+
     return (
         <section id="backend">
             <div className="detail_page">

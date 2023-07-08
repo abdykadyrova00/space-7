@@ -9,14 +9,22 @@ import * as PropTypes from "prop-types";
 
 Slider.propTypes = {children: PropTypes.node};
 const Review = () => {
+<<<<<<< HEAD
 
+=======
+>>>>>>> e811806b1f880f643e355b655b29bb469106017b
     let settings = {
         dots: true,
-        infinite: true,
+        infinite: false,
         speed: 500,
+<<<<<<< HEAD
         slidesToShow: 4,
         autoplay:true,
         slidesToScroll: 4,
+=======
+        slidesToShow: 3,
+        slidesToScroll: 3,
+>>>>>>> e811806b1f880f643e355b655b29bb469106017b
         initialSlide: 0,
         responsive: [
             {
