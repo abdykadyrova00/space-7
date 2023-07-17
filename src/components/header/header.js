@@ -11,6 +11,7 @@ import {BsGlobeCentralSouthAsia} from "react-icons/bs";
 
 const Header = () => {
 
+    const myNumber = +996224192939
 
     const locale = useSelector((state) => state.main.locale);
 
@@ -57,7 +58,7 @@ const Header = () => {
                                     onClick={(e) => dispatch(setLocale(LOCALES.KYRGYZ))}>KG</a>
                                  /
                                  <a className={locale === "ru" ? "active2" : null}
-                                    onClick={(e) => dispatch(setLocale(LOCALES.KYRGYZ))} >RU</a>
+                                    onClick={(e) => dispatch(setLocale(LOCALES.RUSSIAN))} >RU</a>
                              </div>
                              <div className="border"/>
                          </div>
@@ -71,9 +72,9 @@ const Header = () => {
                          <div className="sms">
                              <span>{formatMessage({"id":"set"})}</span>
                              <div>
-                                 <a className="menu__item" href="#">What’s App</a>
-                                 <a className="menu__item" href="#">Instagram</a>
-                                 <a className="menu__item" href="#">Позвонить</a>
+                                 <a className="menu__item" href={`https://wa.me/${myNumber}?text=%20Саламатсызбы%20мен%20курстар%20%20боюунча малымат алайын дегем%20`}>What’s App</a>
+                                 <a className="menu__item" href="https://www.instagram.com/itspace_kg/">Instagram</a>
+                                 <a className="menu__item" href="https://web.telegram.org/k/#@nurbakytkarimov">Позвонить</a>
                              </div>
                          </div>
                      </div>

@@ -3,8 +3,11 @@
     .detail_page{
       background: url("./../../../assets/img/hero2.png") no-repeat center/cover;
       min-height: 100vh;
+      img{
+        margin: 100px 30px;
+      }
       h1{
-        padding-top: 224px;
+        padding-top: 24px;
         padding-left: 30px;
         color: #FFF;
         font-size: 65px;
@@ -34,7 +37,6 @@
       justify-content: space-between;
       &--backFlex{
         padding-top: 76px;
-
         &__blocks{
           display: flex;
           justify-content: space-between;
@@ -53,9 +55,8 @@
         }
       }
       &--block{
+        margin-top: 40px;
         position: sticky;
-        top: 100px;
-        height: 100px;
         width: 332.337px;
         height: 310px;
         border-bottom-right-radius: 100px;
@@ -174,12 +175,12 @@
     }
     .accordion__section {
       margin-top: 56px;
-      border-top: 1px #D9D9D9 solid;
+      border-top: 1px rgba(0, 0, 0, 0.53) solid;
       display: flex;
       width: 750px;
       justify-content: center;
       align-items: center;
-      border-bottom: 1px #D9D9D9 solid;
+      border-bottom: 1px rgba(0, 0, 0, 0.53) solid;
       .accordion {
         display: flex;
         width: 100%;
@@ -215,18 +216,18 @@
           span {
             display: flex;
             cursor: pointer;
-            color: #D9D9D9;
+            color: rgba(0, 0, 0, 0.53);
             font-size: 35px;
             font-weight: 400;
-            width: 30px;
-            height: 30px;
+            width: 50px;
+            height: 50px;
             justify-content: center;
             align-items: center;
-            border: 1px solid #D9D9D9;
+            border: 1px solid rgba(0, 0, 0, 0.53);
             border-radius: 50%;
             line-height: unset;
             img {
-              width: 50%;
+              width: 70%;
               margin: 0;
               padding: 0;
             }

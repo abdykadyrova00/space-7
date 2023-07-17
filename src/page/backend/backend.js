@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react';
 import Accordion from "../../components/accordion/accordion";
 import brat1 from './../../assets/img/brat.svg'
-import in_img from './../../assets/img/in_img.svg'
 import icon1 from  './../../assets/img/icon1.svg'
 import icon2 from  './../../assets/img/icon2.svg'
 import icon3 from  './../../assets/img/icon3.svg'
@@ -10,7 +9,8 @@ import icon5 from  './../../assets/img/icon5.svg'
 import html from './../../assets/img/html.png'
 import js from './../../assets/img/js.svg'
 import react from './../../assets/img/react.png'
-import fon from './../../assets/img/fon.jpg'
+import str from './../../assets/img/str.svg'
+import {Link} from "react-router-dom";
 
 
 const Backend = () => {
@@ -18,10 +18,13 @@ const Backend = () => {
         window.scroll(0, 0)
     }, [])
 
+    const myNumber = +996224192939
+
     return (
         <section id="backend">
             <div className="detail_page">
                 <div className="container">
+                   <Link to={'/home'}><img src={str} alt="img"/></Link>
                     <h1>FRONT-END DEVELOPER</h1>
                     <p>Вы начнете с основ верстки и JAVASCRIPT, а к концу обучения научитесь
                         делать корпоративные сервисы. Получите опыт работы в команде
@@ -147,7 +150,7 @@ const Backend = () => {
                                 1 месяц стажировка
                             </p>
                             <h1>10 000 cом в месяц</h1>
-                            <a href={"#"}>Записаться</a>
+                            <a href={`https://wa.me/${myNumber}?text=%20Саламатсызбы%20мен%20курстар%20%20боюунча малымат алайын дегем%20`}>Записаться</a>
                         </div>
                     </div>
 

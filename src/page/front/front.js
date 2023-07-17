@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-import React from 'react';
+import React, {useEffect} from 'react';
 import Accordion from "../../components/accordion/accordion";
 import brat1 from './../../assets/img/brat.svg'
 import in_img from './../../assets/img/in_img.svg'
@@ -13,11 +12,9 @@ import js from './../../assets/img/js.svg'
 import react from './../../assets/img/react.png'
 import fon from './../../assets/img/fon.jpg'
 
-=======
-import React, {useEffect} from 'react';
->>>>>>> e811806b1f880f643e355b655b29bb469106017b
 
 const Front = () => {
+
     useEffect(() => {
         window.scroll(0, 0)
     }, [])
