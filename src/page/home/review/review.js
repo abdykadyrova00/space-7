@@ -4,27 +4,20 @@ import ellipse2 from "./../../../assets/img/ellipse2.png"
 import ellipse3 from "./../../../assets/img/ellipse3.png"
 import ellipse4 from "./../../../assets/img/ellipse4.png"
 import Slider from "react-slick";
-
 import * as PropTypes from "prop-types";
-
+import {useIntl} from "react-intl";
 Slider.propTypes = {children: PropTypes.node};
 const Review = () => {
-<<<<<<< HEAD
 
-=======
->>>>>>> e811806b1f880f643e355b655b29bb469106017b
+    const {formatMessage} = useIntl()
     let settings = {
         dots: true,
         infinite: false,
         speed: 500,
-<<<<<<< HEAD
+
         slidesToShow: 4,
         autoplay:true,
         slidesToScroll: 4,
-=======
-        slidesToShow: 3,
-        slidesToScroll: 3,
->>>>>>> e811806b1f880f643e355b655b29bb469106017b
         initialSlide: 0,
         responsive: [
             {
@@ -57,16 +50,11 @@ const Review = () => {
     return (
         <section id="review">
             <div className="container">
-                <h1>Что говорят наши студенты?</h1>
+                <h1>{formatMessage({id:"student"})}</h1>
                 <div className="review">
                     <Slider {...settings}>
                     <div className="review--group">
-                        <p>За 7 месяцев я научился очень
-                            многому. После курса они
-                            помогли найти работу в
-                            IT-Компании. Огромное спасибо
-                            ITSPACE
-                        </p>
+                        <p>{formatMessage({id:"rew1"})}</p>
                         <div className="review--group__children">
                             <img src={ellipse} alt="img"/>
                             <div>
@@ -79,12 +67,7 @@ const Review = () => {
                     </div>
 
                     <div className="review--group">
-                        <p>За 7 месяцев я научился очень
-                            многому. После курса они
-                            помогли найти работу в
-                            IT-Компании. Огромное спасибо
-                            ITSPACE
-                        </p>
+                        <p>{formatMessage({id:"rew--group"})}</p>
                         <div className="review--group__children">
                             <img src={ellipse2} alt="img"/>
                             <div>
@@ -96,12 +79,7 @@ const Review = () => {
 
                     </div>
                     <div className="review--group">
-                        <p>За 7 месяцев я научился очень
-                            многому. После курса они
-                            помогли найти работу в
-                            IT-Компании. Огромное спасибо
-                            ITSPACE
-                        </p>
+                        <p>{formatMessage({id:"rew2"})}</p>
                         <div className="review--group__children">
                             <img src={ellipse3} alt="img"/>
                             <div>
@@ -113,12 +91,7 @@ const Review = () => {
 
                     </div>
                     <div className="review--group">
-                        <p>За 7 месяцев я научился очень
-                            многому. После курса они
-                            помогли найти работу в
-                            IT-Компании. Огромное спасибо
-                            ITSPACE
-                        </p>
+                        <p>{formatMessage({id:"rew3"})}</p>
                         <div className="review--group__children">
                             <img src={ellipse4} alt="img"/>
                             <div>
@@ -131,12 +104,7 @@ const Review = () => {
                     </div>
 
                         <div className="review--group">
-                            <p>За 7 месяцев я научился очень
-                                многому. После курса они
-                                помогли найти работу в
-                                IT-Компании. Огромное спасибо
-                                ITSPACE
-                            </p>
+                            <p>{formatMessage({id:"rew4"})}</p>
                             <div className="review--group__children">
                                 <img src={ellipse} alt="img"/>
                                 <div>
@@ -149,12 +117,7 @@ const Review = () => {
                         </div>
 
                         <div className="review--group">
-                            <p>За 7 месяцев я научился очень
-                                многому. После курса они
-                                помогли найти работу в
-                                IT-Компании. Огромное спасибо
-                                ITSPACE
-                            </p>
+                            <p>{formatMessage({id:"rew5"})}</p>
                             <div className="review--group__children">
                                 <img src={ellipse2} alt="img"/>
                                 <div>
@@ -167,12 +130,7 @@ const Review = () => {
                         </div>
 
                         <div className="review--group">
-                            <p>За 7 месяцев я научился очень
-                                многому. После курса они
-                                помогли найти работу в
-                                IT-Компании. Огромное спасибо
-                                ITSPACE
-                            </p>
+                            <p>{formatMessage({id:"rew6"})}</p>
                             <div className="review--group__children">
                                 <img src={ellipse3} alt="img"/>
                                 <div>
@@ -185,12 +143,7 @@ const Review = () => {
                         </div>
 
                         <div className="review--group">
-                            <p>За 7 месяцев я научился очень
-                                многому. После курса они
-                                помогли найти работу в
-                                IT-Компании. Огромное спасибо
-                                ITSPACE
-                            </p>
+                            <p>{formatMessage({id:"rew7"})}</p>
                             <div className="review--group__children">
                                 <img src={ellipse4} alt="img"/>
                                 <div>

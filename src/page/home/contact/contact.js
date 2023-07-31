@@ -2,12 +2,14 @@ import React from 'react';
 import {BsFillTelephoneInboundFill, BsChatLeftFill, BsGeoAltFill, BsFillCursorFill} from "react-icons/bs";
 import {AiFillInstagram, AiOutlineWhatsApp} from "react-icons/ai";
 import {FaTelegram} from "react-icons/fa";
+import {useIntl} from "react-intl";
 
 const Contact = () => {
+    const {formatMessage} = useIntl()
     const myNumber = +996224192939
     return (
         <section id="contact">
-            <h1>Контакты</h1>
+            <h1>{formatMessage({id:"contact"})}</h1>
             <div className="contact">
             <div className="container">
                 <div className="contact--div">
@@ -37,7 +39,7 @@ const Contact = () => {
                     </div>
                     <div className="contact--div__button">
                         <a href="https://goo.gl/maps/njFSQs4ks5ftdWbR6?coh=178572&entry=tt">
-                            <button> <BsFillCursorFill style={{width:"40px", color:"blue"}}/> Открыть карту</button>
+                            <button> <BsFillCursorFill style={{width:"40px", color:"blue"}}/>{formatMessage({id:"maps"})}</button>
                         </a>
                     </div>
 

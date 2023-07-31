@@ -57,7 +57,7 @@ const Header = () => {
                                     onClick={(e) => dispatch(setLocale(LOCALES.KYRGYZ))}>KG</a>
                                  /
                                  <a className={locale === "ru" ? "active2" : null}
-                                    onClick={(e) => dispatch(setLocale(LOCALES.KYRGYZ))} >RU</a>
+                                    onClick={(e) => dispatch(setLocale(LOCALES.RUSSIAN))} >RU</a>
                              </div>
                              <div className="border"/>
                          </div>

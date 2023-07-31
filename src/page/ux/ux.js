@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-import React from 'react';
+
+import React, {useEffect} from 'react';
 import Accordion from "../../components/accordion/accordion";
 import brat1 from './../../assets/img/brat.svg'
 import in_img from './../../assets/img/in_img.svg'
@@ -11,11 +11,9 @@ import icon5 from  './../../assets/img/icon5.svg'
 import html from './../../assets/img/html.png'
 import js from './../../assets/img/js.svg'
 import react from './../../assets/img/react.png'
-import fon from './../../assets/img/fon.jpg'
-=======
-import React, {useEffect} from 'react';
 
->>>>>>> e811806b1f880f643e355b655b29bb469106017b
+
+
 
 
 const Ux = () => {
@@ -23,7 +21,6 @@ const Ux = () => {
         window.scroll(0, 0)
     }, [])
     return (
-<<<<<<< HEAD
         <section id="backend">
             <div className="detail_page">
                 <div className="container">
@@ -162,11 +159,8 @@ const Ux = () => {
             </div>
 
         </section>
-=======
-        <div>
 
-                    </div>
->>>>>>> e811806b1f880f643e355b655b29bb469106017b
+
     );
 };
 

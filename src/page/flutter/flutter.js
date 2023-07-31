@@ -1,21 +1,20 @@
-<<<<<<< HEAD
-import React from 'react';
+
+import React, {useEffect} from 'react';
 import Accordion from "../../components/accordion/accordion";
 import brat1 from './../../assets/img/brat.svg'
-import in_img from './../../assets/img/in_img.svg'
+// import in_img from './../../assets/img/in_img.svg'
 import icon1 from  './../../assets/img/icon1.svg'
 import icon2 from  './../../assets/img/icon2.svg'
 import icon3 from  './../../assets/img/icon3.svg'
 import icon4 from  './../../assets/img/icon4.png'
 import icon5 from  './../../assets/img/icon5.svg'
 import html from './../../assets/img/html.png'
-import js from './../../assets/img/js.svg'
+import fff from './../../assets/img/js.svg'
 import react from './../../assets/img/react.png'
-import fon from './../../assets/img/fon.jpg'
 
-=======
-import React, {useEffect} from 'react';
->>>>>>> e811806b1f880f643e355b655b29bb469106017b
+
+
+
 
 const Flutter = () => {
     useEffect(() => {
@@ -51,7 +50,7 @@ const Flutter = () => {
                                         content="Веб-верстка - это процесс создания и организации структуры, разметки и внешнего вида веб-страницы. Она включает в себя использование языков разметки, таких как HTML, и стилевых языков, таких как CSS, для создания удобной и эстетически привлекательной пользовательской интерфейса. "
                                     />
                                     <Accordion
-                                        img={js}
+                                        img={fff}
                                         title="2. JavaScript"
                                         content="JavaScript - это высокоуровневый язык программирования, который широко используется для создания интерактивных элементов на веб-страницах. Он обеспечивает возможность добавлять динамическое поведение и функциональность к веб-сайтам.t"
                                     />

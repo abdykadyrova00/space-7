@@ -10,19 +10,21 @@ import icon5 from  './../../assets/img/icon5.svg'
 import html from './../../assets/img/html.png'
 import js from './../../assets/img/js.svg'
 import react from './../../assets/img/react.png'
-import fon from './../../assets/img/fon.jpg'
-
+// import fon from './../../assets/img/fon.jpg'
+import {useIntl} from "react-intl";
 
 const Backend = () => {
+     const {formatMessage}= useIntl()
     useEffect(() => {
         window.scroll(0, 0)
     }, [])
 
+    // language=HTML
     return (
         <section id="backend">
             <div className="detail_page">
                 <div className="container">
-                    <h1>FRONT-END DEVELOPER</h1>
+                    <h1>PYTHON DEVELOPER</h1>
                     <p>Вы начнете с основ верстки и JAVASCRIPT, а к концу обучения научитесь
                         делать корпоративные сервисы. Получите опыт работы в команде
                         и начнете карьеру в сфере IT как веб-разработчика</p>
@@ -44,17 +46,28 @@ const Backend = () => {
                                     <Accordion
                                         img={html}
                                         title="1. Веб - верстка"
-                                        content="Веб-верстка - это процесс создания и организации структуры, разметки и внешнего вида веб-страницы. Она включает в себя использование языков разметки, таких как HTML, и стилевых языков, таких как CSS, для создания удобной и эстетически привлекательной пользовательской интерфейса. "
+                                        content={formatMessage({id:"oop"})}
                                     />
                                     <Accordion
                                         img={js}
                                         title="2. JavaScript"
-                                        content="JavaScript - это высокоуровневый язык программирования, который широко используется для создания интерактивных элементов на веб-страницах. Он обеспечивает возможность добавлять динамическое поведение и функциональность к веб-сайтам.t"
+                                        content={formatMessage({id:"python"})}
                                     />
                                     <Accordion
                                         img={react}
                                         title="3. React JS"
-                                        content="React JS - это JavaScript-библиотека для разработки пользовательского интерфейса. Она позволяет создавать компоненты, которые представляют собой независимые и переиспользуемые блоки кода, отвечающие за отображение данных и взаимодействие с пользователем."
+                                        content={formatMessage({id:"java"})}
+                                    />
+                                    <Accordion
+                                        img={react}
+                                        title="3. React JS"
+                                        content={formatMessage({id:"object"})}
+
+                                    />
+                                    <Accordion
+                                        img={react}
+                                        title="3. React JS"
+                                        content={formatMessage({id:"django"})}
                                     />
                                 </div>
                             </div>
@@ -62,10 +75,8 @@ const Backend = () => {
 
                         <div className="backend--diploma">
                             <h1>Дипломные проекты</h1>
-                            <p>1. Landing Page </p>
-                            <p>2. Сайт</p>
-                            <p>3. Интернет магазин</p>
-                            <p>4. С чем мы будем и как будем работать</p>
+                           <p>Интернет магазин</p>
+                            <p>Сайт по желанию</p>
                         </div>
 
                         <div className="backend--mentors">
@@ -140,7 +151,7 @@ const Backend = () => {
                     <div className="backend--block">
                         <div className="backend--block__textCourse">
                             <span>Курс</span>
-                            <h1>FRONT-END DEVELOPER</h1>
+                            <h1>PYTHON DEVELOPER</h1>
                             <p>
                                 Курс длится 7 месяцев -
                                 6 месяц обучение
