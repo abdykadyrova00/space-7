@@ -178,23 +178,15 @@
       border-top: 1px rgba(0, 0, 0, 0.53) solid;
       display: flex;
       width: 750px;
-      justify-content: center;
-      align-items: center;
       border-bottom: 1px rgba(0, 0, 0, 0.53) solid;
       .accordion {
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 20px 0;
+        //display: flex;
+        //width: 100%;
+        //flex-direction: column;
         .line {
-          display: flex;
-          width: 100%;
-          justify-content: space-between;
-          align-items: center;
           img {
-            width: 28px;
-            margin-right: 10px;
+            //width: 28px;
+            //margin-right: 10px;
           }
           .title {
             display: flex;

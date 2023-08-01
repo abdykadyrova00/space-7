@@ -24,7 +24,7 @@ const Backend = () => {
         <section id="backend">
             <div className="detail_page">
                 <div className="container">
-                   <Link to={'/home'}><img src={str} alt="img"/></Link>
+                   <Link to={'/'}><img src={str} alt="img"/></Link>
                     <h1>FRONT-END DEVELOPER</h1>
                     <p>Вы начнете с основ верстки и JAVASCRIPT, а к концу обучения научитесь
                         делать корпоративные сервисы. Получите опыт работы в команде
@@ -150,7 +150,7 @@ const Backend = () => {
                                 1 месяц стажировка
                             </p>
                             <h1>10 000 cом в месяц</h1>
-                            <a href={`https://wa.me/${myNumber}?text=%20Саламатсызбы%20мен%20курстар%20%20боюунча малымат алайын дегем%20`}>Записаться</a>
+                            <a href={`https://wa.me/${myNumber}?text=%20Саламатсызбы%20мен%20Backend-курсу%20%20боюунча малымат алайын дегем%20`}>Записаться</a>
                         </div>
                     </div>
 

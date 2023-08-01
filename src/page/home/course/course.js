@@ -22,7 +22,7 @@ const Course = () => {
                             <label htmlFor="front"><p> Front-End develop</p></label>
                             <label htmlFor="back"><p> Back-End develop</p></label>
                             <label htmlFor="ux"><p>UX/UI Design</p></label>
-                            <label htmlFor="flutter"><p>Flutter</p></label>
+                            {/*<label htmlFor="flutter"><p>Flutter</p></label>*/}
                         </div>
                         <div className="course--courseFlex__blocks">
                             <input type="radio" name="tabs" id="front"/>
@@ -99,27 +99,27 @@ const Course = () => {
                                 </div>
 
                             </div>
-                            <div className="course--courseFlex__blocks--front  tabs-flutter">
-                                <div className="course--courseFlex__blocks--front__cards">
-                                    <div className="course--courseFlex__blocks--front__cards__cont">
-                                        <button>Курс</button>
-                                        <h2>Flutter</h2>
-                                        <p>{formatMessage({"id": "flutter"})}</p>
-                                    </div>
-                                    <div className="course--courseFlex__blocks--front__cards__logoJs">
-                                        <div className="course--courseFlex__blocks--front__logoJs--js">
-                                            <img src={flutter} alt="#"/>
-                                        </div>
-                                        <div className="course--courseFlex__blocks--front__logoJs--js">
-                                            <img src={sale} alt="img"/>
-                                        </div>
-                                    </div>
-                                </div>
+                            {/*<div className="course--courseFlex__blocks--front  tabs-flutter">*/}
+                            {/*    <div className="course--courseFlex__blocks--front__cards">*/}
+                            {/*        <div className="course--courseFlex__blocks--front__cards__cont">*/}
+                            {/*            <button>Курс</button>*/}
+                            {/*            <h2>Flutter</h2>*/}
+                            {/*            <p>{formatMessage({"id": "flutter"})}</p>*/}
+                            {/*        </div>*/}
+                            {/*        <div className="course--courseFlex__blocks--front__cards__logoJs">*/}
+                            {/*            <div className="course--courseFlex__blocks--front__logoJs--js">*/}
+                            {/*                <img src={flutter} alt="#"/>*/}
+                            {/*            </div>*/}
+                            {/*            <div className="course--courseFlex__blocks--front__logoJs--js">*/}
+                            {/*                <img src={sale} alt="img"/>*/}
+                            {/*            </div>*/}
+                            {/*        </div>*/}
+                            {/*    </div>*/}
 
-                                <div className="course--courseFlex__blocks--front--bs">
-                                    <Link to={'/flutter'}><p>{formatMessage({"id": "bc"})}<BsArrowRight/></p></Link>
-                                </div>
-                            </div>
+                            {/*    <div className="course--courseFlex__blocks--front--bs">*/}
+                            {/*        <Link to={'/flutter'}><p>{formatMessage({"id": "bc"})}<BsArrowRight/></p></Link>*/}
+                            {/*    </div>*/}
+                            {/*</div>*/}
                         </div>
                     </div>
                 </div>

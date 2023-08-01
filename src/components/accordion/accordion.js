@@ -7,6 +7,7 @@ import "./../../App.css";
 const Accordion = (props) => {
     const [active, setActive] = useState(false);
     const content = useRef(null);
+    const text = useRef(null)
     const [height, setHeight] = useState("0px");
     useEffect(() => {
         console.log("Height for ", props.title, ": ", height);
