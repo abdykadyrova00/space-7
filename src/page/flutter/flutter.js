@@ -7,9 +7,8 @@ import icon3 from  './../../assets/img/icon3.svg'
 import icon4 from  './../../assets/img/icon4.png'
 import icon5 from  './../../assets/img/icon5.svg'
 import html from './../../assets/img/html.png'
-import js from './../../assets/img/js.svg'
+import fff from './../../assets/img/js.svg'
 import react from './../../assets/img/react.png'
-
 
 const Flutter = () => {
     useEffect(() => {
@@ -45,7 +44,7 @@ const Flutter = () => {
                                         content="Веб-верстка - это процесс создания и организации структуры, разметки и внешнего вида веб-страницы. Она включает в себя использование языков разметки, таких как HTML, и стилевых языков, таких как CSS, для создания удобной и эстетически привлекательной пользовательской интерфейса. "
                                     />
                                     <Accordion
-                                        img={js}
+                                        img={fff}
                                         title="2. JavaScript"
                                         content="JavaScript - это высокоуровневый язык программирования, который широко используется для создания интерактивных элементов на веб-страницах. Он обеспечивает возможность добавлять динамическое поведение и функциональность к веб-сайтам.t"
                                     />

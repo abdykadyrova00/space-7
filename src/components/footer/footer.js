@@ -2,7 +2,10 @@ import React from 'react';
 import logo from "./../../assets/img/itlogo.png"
 import { AiFillInstagram,AiOutlineWhatsApp } from "react-icons/ai";
 import {FaTelegram} from "react-icons/fa";
+import {useIntl} from "react-intl";
+
 const Footer = () => {
+    const {formatMessage} = useIntl()
 
     const myNumber = +996224192939
     return (
@@ -12,10 +15,10 @@ const Footer = () => {
                     <div className="footer--card">
                     <img src={logo} alt="img"/>
                     <div className="footer--card__about">
-                        <a>Главная</a>
-                        <a>О нас</a>
-                        <a>Курсы</a>
-                        <a>Отзывы</a>
+                        <a>{formatMessage({id:"house"})}</a>
+                        <a>{formatMessage({id:"follow"})}</a>
+                        <a>{formatMessage({id:"course"})}</a>
+                        <a>{formatMessage({id:"review"})}</a>
                     </div>
 
                     <div className="footer--card__icon">

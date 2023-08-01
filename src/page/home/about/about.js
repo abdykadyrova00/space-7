@@ -5,8 +5,6 @@ import icon1 from "./../../../assets/img/icon1.png"
 import icon2 from "./../../../assets/img/icon2.png"
 import icon3 from "./../../../assets/img/icon3.png"
 import video from "../../../assets/video/video.mp4";
-
-
 const About = () => {
 
     const {formatMessage} = useIntl()
@@ -83,15 +81,9 @@ const About = () => {
             <div className="container">
                 <div className="about">
                     <div className="about--text">
-                        <h1>
-                            “Мы не можем изменить
-                            прошлое, но мы можем
-                            создать будущее”
-                        </h1>
+                        <h1>{formatMessage({id:"about"})}</h1>
                         <p>
-                            Наша цель - помочь студентам научиться
-                            программированию. Наши курсы подходят для всех -
-                            от начинающих до продвинутых программистов
+                            {formatMessage(({id:"about-title"}))}
                         </p>
 
                     </div>
@@ -110,41 +102,37 @@ const About = () => {
                                 <div className="info">
                                     <div>
                                     <h2>
-                                        C нуля до Junior
+                                        {formatMessage({id:"about-text"})}
                                     </h2>
 
                                     <p>
-                                        Обучись и стань Junior разработчиком!
+                                        {formatMessage({id:"text"})}
                                     </p>
                                    </div>
 
 
                                     <div>
                                     <h2>
-                                        Трудоустройство
+                                        {formatMessage({id:"Employment"})}
                                     </h2>
 
                                     <p>
-                                        Гарантировання
-                                        стажировка!
+                                        {formatMessage({id:"Employment-text"})}
                                     </p>
 
                                     </div>
 
                                     <div>
                                     <h2>
-                                        Портфолио
+                                        {formatMessage({id:"Portfolio"})}
                                     </h2>
 
                                     <p>
-                                        5 качественных проектов
-                                        к вам на портфолио
+                                        {formatMessage({id:"Portfolio-text"})}
                                     </p>
                                 </div>
                                 </div>
                             </div>
-
-
                         </div>
 
                         <div className="video_block">

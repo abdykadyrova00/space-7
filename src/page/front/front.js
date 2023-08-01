@@ -2,21 +2,23 @@ import React, {useEffect} from 'react';
 import Accordion from "../../components/accordion/accordion";
 import brat1 from './../../assets/img/brat.svg'
 import in_img from './../../assets/img/in_img.svg'
-import icon1 from  './../../assets/img/icon1.svg'
-import icon2 from  './../../assets/img/icon2.svg'
-import icon3 from  './../../assets/img/icon3.svg'
-import icon4 from  './../../assets/img/icon4.png'
-import icon5 from  './../../assets/img/icon5.svg'
+import icon1 from './../../assets/img/icon1.svg'
+import icon2 from './../../assets/img/icon2.svg'
+import icon3 from './../../assets/img/icon3.svg'
+import icon4 from './../../assets/img/icon4.png'
+import icon5 from './../../assets/img/icon5.svg'
 import html from './../../assets/img/html.png'
 import js from './../../assets/img/js.svg'
 import react from './../../assets/img/react.png'
 import fon from './../../assets/img/fon.jpg'
 import {Link} from "react-router-dom";
 import str from "../../assets/img/str.svg";
+import {useIntl} from "react-intl";
 
 
 const Front = () => {
 
+    const { formatMessage } = useIntl();
     useEffect(() => {
         window.scroll(0, 0)
     }, [])
@@ -28,12 +30,10 @@ const Front = () => {
                     <Link to={'/'}><img src={str} alt="img"/></Link>
 
                     <h1>FRONT-END DEVELOPER</h1>
-                    <p>Вы начнете с основ верстки и JAVASCRIPT, а к концу обучения научитесь
-                        делать корпоративные сервисы. Получите опыт работы в команде
-                        и начнете карьеру в сфере IT как веб-разработчика</p>
+                    <p>{formatMessage({id:"front"})}</p>
                     <ul>
-                        <li>После окончания курса получите сертификат и плюс трудоустройство
-                            в IT-компаниях
+                        <li>
+                            {formatMessage({id:"front-text"})}
                         </li>
                     </ul>
                 </div>
@@ -44,37 +44,44 @@ const Front = () => {
                         <div className="backend--backFlex">
                             <div className="backend--backFlex__blocks">
                                 <div className="backend--backFlex__blocks--detail">
-                                    <h1>Программа</h1>
-                                    <p>Основные курсы</p>
+                                    <h1>{formatMessage({id:"program"})}</h1>
+                                    <p>{formatMessage({id:"course"})}</p>
                                     <Accordion
                                         img={html}
                                         title="1. Веб - верстка"
-                                        content="Веб-верстка - это процесс создания и организации структуры, разметки и внешнего вида веб-страницы. Она включает в себя использование языков разметки, таких как HTML, и стилевых языков, таких как CSS, для создания удобной и эстетически привлекательной пользовательской интерфейса. "
+                                        content={formatMessage({id:"page"})}
                                     />
                                     <Accordion
                                         img={js}
                                         title="2. JavaScript"
-                                        content="JavaScript - это высокоуровневый язык программирования, который широко используется для создания интерактивных элементов на веб-страницах. Он обеспечивает возможность добавлять динамическое поведение и функциональность к веб-сайтам.t"
+                                        content={formatMessage({id:"learning"})}
+
+                                    />
+                                    <Accordion
+                                        img={js}
+                                        title="2.  JAVASCRIPT - DOM"
+                                        content={formatMessage({id:"dom"})}
+
                                     />
                                     <Accordion
                                         img={react}
                                         title="3. React JS"
-                                        content="React JS - это JavaScript-библиотека для разработки пользовательского интерфейса. Она позволяет создавать компоненты, которые представляют собой независимые и переиспользуемые блоки кода, отвечающие за отображение данных и взаимодействие с пользователем."
+                                        content={formatMessage({id:"front-page"})}
                                     />
                                 </div>
                             </div>
                         </div>
 
                         <div className="backend--diploma">
-                            <h1>Дипломные проекты</h1>
+                            <h1>{formatMessage({id:"diploma"})}</h1>
                             <p>1. Landing Page </p>
-                            <p>2. Сайт</p>
-                            <p>3. Интернет магазин</p>
-                            <p>4. С чем мы будем и как будем работать</p>
+                            <p>{formatMessage({id:"movie"})}</p>
+                            <p>{formatMessage({id:"shop"})}</p>
+                            <p>{formatMessage({id:"project"})}</p>
                         </div>
 
                         <div className="backend--mentors">
-                            <h1>Наши менторы</h1>
+                            <h1>{formatMessage({id:"mentor"})}</h1>
                             <div className="backend--mentors__group">
                                 <div className="backend--mentors__group--mentorPhoto">
                                     <img src={brat1} alt=""/>
@@ -109,33 +116,26 @@ const Front = () => {
                                 </div>
                                 <div className="backend--question__questionFlex--textQuestion">
                                     <div>
-                                        <h4>Верстать сайт</h4>
-                                        <p>Детально изучите все возможности современного CSS, научитесь верстать
-                                            адаптивныесайты, которыми удобно пользоваться. Сделаете проекты
-                                            эстетичнее при помощианимаций и переходов.</p>
+                                        <h4>{formatMessage({id:"website"})}</h4>
+                                        <p>{formatMessage({id:"website-text"})}</p>
                                     </div>
                                     <div>
                                         <h4>Java Script</h4>
-                                        <p>Будете проектировать логику работы сайта. От простого модального окнадо
-                                            асинхронной загрузки данных с сервера и программирования enterprise-
-                                            приложений.Без стресса выучите один из
-                                            самых популярных языков программирования.</p>
+                                        <p>
+                                            {formatMessage({id:"js-text"})}
+                                        </p>
                                     </div>
                                     <div>
                                         <h4>Framework</h4>
-                                        <p>С помощью фреймворков вы сможете быстрее разрабатывать сложные
-                                            веб-сервисы, а ещё они эффективнее расходуют ресурсы браузера.
-                                            Вы сами выбираете, что учить — React или Vue..</p>
+                                        <p>{formatMessage({id:"framework"})}</p>
                                     </div>
                                     <div>
-                                        <h4>Работать с GIT</h4>
-                                        <p>Будете сохранять все этапы работы над проектами, чтобы у коллег всегда был
-                                            доступ к коду, а случайные ошибки можно было исправить в два клика</p>
+                                        <h4>{formatMessage({id:"git"})}</h4>
+                                        <p>{formatMessage({id:"git-text"})}</p>
                                     </div>
                                     <div>
-                                        <h4>Красота в команде</h4>
-                                        <p>Научитесь работать по спринтам и Scrum-методологии. Под руководством
-                                            тимлидавместе  с другими студентами напишете веб-приложение.</p>
+                                        <h4>{formatMessage({id:"team"})}</h4>
+                                        <p>{formatMessage({id:"team-text"})}</p>
                                     </div>
                                 </div>
                             </div>
@@ -155,12 +155,8 @@ const Front = () => {
                             <a href={"#"}>Записаться</a>
                         </div>
                     </div>
-
                 </div>
-
-
             </div>
-
         </section>
     );
 };

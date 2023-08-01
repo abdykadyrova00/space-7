@@ -1,3 +1,4 @@
+
 import React, {useEffect} from 'react';
 import Accordion from "../../components/accordion/accordion";
 import brat1 from './../../assets/img/brat.svg'
@@ -10,11 +11,11 @@ import icon5 from  './../../assets/img/icon5.svg'
 import html from './../../assets/img/html.png'
 import js from './../../assets/img/js.svg'
 import react from './../../assets/img/react.png'
+
 import fon from './../../assets/img/fon.jpg'
 import {Link} from "react-router-dom";
 import str from "../../assets/img/str.svg";
 import {useIntl} from "react-intl";
-
 
 
 const Ux = () => {
@@ -215,6 +216,7 @@ const Ux = () => {
             </div>
 
         </section>
+
     );
 };
 
