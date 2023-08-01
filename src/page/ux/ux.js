@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> a8d1cd3d683ce876a7ee6f76a00c2569e6736805
 import React, {useEffect} from 'react';
 import Accordion from "../../components/accordion/accordion";
 import brat1 from './../../assets/img/brat.svg'
@@ -11,20 +8,17 @@ import icon2 from  './../../assets/img/icon2.svg'
 import icon3 from  './../../assets/img/icon3.svg'
 import icon4 from  './../../assets/img/icon4.png'
 import icon5 from  './../../assets/img/icon5.svg'
+import {useIntl} from "react-intl";
 import html from './../../assets/img/html.png'
 import js from './../../assets/img/js.svg'
 import react from './../../assets/img/react.png'
-<<<<<<< HEAD
 
-
-
-=======
 import fon from './../../assets/img/fon.jpg'
 
->>>>>>> a8d1cd3d683ce876a7ee6f76a00c2569e6736805
 
 
 const Ux = () => {
+    const {formatMessage} = useIntl()
     useEffect(() => {
         window.scroll(0, 0)
     }, [])
@@ -52,26 +46,16 @@ const Ux = () => {
                                     <p>Основные курсы</p>
                                     <Accordion
                                         title="1.Киришүү"
-                                        content="Веб-дизайндын тарыхы.
-                                                    Веб-дизайнер менен UX/UI дизайнердин айрмасы?
-                                                    UX/UI дизайнер ким?
-                                                    Figma программасы менен таанышуу.
-                                                    Figma программасындагы инстурменттери менен таанышуу.
-                                                    Плагиндер менен таанышуу жана орнотуу "
+                                        content={formatMessage({id:"ux"})}
                                     />
                                     <Accordion
                                         title="2. Техникалык негиздер"
-                                        content="Шрифттер жана аларды кантип колдонуу керек
-                                                    Текст менен иштөө
-                                                    Веб-дизайндагы торчолор
-                                                    Өңдөр менен иштөө
-                                                    Интерфейстеги баскычтар
-                                                    Интерфейс элементтери"
+                                        content={formatMessage({id:"ux-content"})}
                                         text="Razia"
                                     />
                                     <Accordion
                                         title="3. React JS"
-                                        content="React JS - это JavaScript-библиотека для разработки пользовательского интерфейса. Она позволяет создавать компоненты, которые представляют собой независимые и переиспользуемые блоки кода, отвечающие за отображение данных и взаимодействие с пользователем."
+                                        content=""
                                     />
                                 </div>
                             </div>
@@ -174,11 +158,10 @@ const Ux = () => {
             </div>
 
         </section>
-<<<<<<< HEAD
 
 
-=======
->>>>>>> a8d1cd3d683ce876a7ee6f76a00c2569e6736805
+
+
     );
 };
 

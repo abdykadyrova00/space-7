@@ -1,14 +1,7 @@
-<<<<<<< HEAD
 
 import React, {useEffect} from 'react';
 import Accordion from "../../components/accordion/accordion";
 import brat1 from './../../assets/img/brat.svg'
-// import in_img from './../../assets/img/in_img.svg'
-=======
-import React, {useEffect} from 'react';
-import Accordion from "../../components/accordion/accordion";
-import brat1 from './../../assets/img/brat.svg'
->>>>>>> a8d1cd3d683ce876a7ee6f76a00c2569e6736805
 import icon1 from  './../../assets/img/icon1.svg'
 import icon2 from  './../../assets/img/icon2.svg'
 import icon3 from  './../../assets/img/icon3.svg'
@@ -18,12 +11,12 @@ import html from './../../assets/img/html.png'
 import fff from './../../assets/img/js.svg'
 import react from './../../assets/img/react.png'
 
-<<<<<<< HEAD
 
 
 
-=======
->>>>>>> a8d1cd3d683ce876a7ee6f76a00c2569e6736805
+
+
+
 
 const Flutter = () => {
     useEffect(() => {
