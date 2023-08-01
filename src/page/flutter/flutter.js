@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6bd1847d5597bef6ff2499b16cf884f7719c0619
 import React, {useEffect} from 'react';
 import Accordion from "../../components/accordion/accordion";
 import brat1 from './../../assets/img/brat.svg'
@@ -10,6 +14,16 @@ import html from './../../assets/img/html.png'
 import fff from './../../assets/img/js.svg'
 import react from './../../assets/img/react.png'
 
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+>>>>>>> 6bd1847d5597bef6ff2499b16cf884f7719c0619
 const Flutter = () => {
     useEffect(() => {
         window.scroll(0, 0)

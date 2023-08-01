@@ -8,7 +8,6 @@ import video from "../../../assets/video/video.mp4";
 const About = () => {
 
     const {formatMessage} = useIntl()
-
     const [count1, setCount1] = useState(0);
     const [count2, setCount2] = useState(0);
     const [count3, setCount3] = useState(0);
