@@ -52,13 +52,15 @@ const Header = () => {
                         </label>
                      <div className="menu__box">
                          <div className="lang">
-                             <div>
+                             <div className="lang-div">
                                  <BsGlobeCentralSouthAsia/>
-                                 <a className={locale === "kg" ? "active2" : null}
-                                    onClick={(e) => dispatch(setLocale(LOCALES.KYRGYZ))}>KG</a>
-                                 /
-                                 <a className={locale === "ru" ? "active2" : null}
-                                    onClick={(e) => dispatch(setLocale(LOCALES.RUSSIAN))} >RU</a>
+                                 <div>
+                                     <a className={locale === "kg" ? "active2" : null}
+                                        onClick={(e) => dispatch(setLocale(LOCALES.KYRGYZ))}>KG</a>
+                                     /
+                                     <a className={locale === "ru" ? "active2" : null}
+                                        onClick={(e) => dispatch(setLocale(LOCALES.RUSSIAN))} >RU</a>
+                                 </div>
                              </div>
                              <div className="border"/>
                          </div>

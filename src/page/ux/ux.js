@@ -11,23 +11,29 @@ import html from './../../assets/img/html.png'
 import js from './../../assets/img/js.svg'
 import react from './../../assets/img/react.png'
 import fon from './../../assets/img/fon.jpg'
+import {Link} from "react-router-dom";
+import str from "../../assets/img/str.svg";
+import {useIntl} from "react-intl";
 
 
 
 const Ux = () => {
+
+    const {formatMessage} = useIntl()
+
     useEffect(() => {
         window.scroll(0, 0)
     }, [])
     return (
-        <section id="backend">
+        <section id="ux">
             <div className="detail_page">
                 <div className="container">
+                    <Link to={'/'}><img src={str} alt="img"/></Link>
                     <h1>UX/UI дизайнер</h1>
-                    <p>UX/UI дизайны боюнча ар тараптуу
-                        билимге ээ болуп, 100 доллардан 1 миллион долларга чейин киреше таба баштаңыз, чоң долбоорлордо чоң компанияда иштеп өз клечегиңизге кадам таштаңыз.
+                    <p> {formatMessage({id:"ux-page"})}
                     </p>
                     <ul>
-                        <li>Курсту мыкты денгээлде аяктаган студенттерге сертификат+жумушка
+                        <li>{formatMessage({id:"ux-text"})}
                         </li>
                     </ul>
                 </div>
@@ -41,7 +47,7 @@ const Ux = () => {
                                     <h1>Программа</h1>
                                     <p>Основные курсы</p>
                                     <Accordion
-                                        title="1.Киришүү"
+                                        title={formatMessage({id:"title"})}
                                         content="Веб-дизайндын тарыхы.
                                                     Веб-дизайнер менен UX/UI дизайнердин айрмасы?
                                                     UX/UI дизайнер ким?
@@ -60,19 +66,64 @@ const Ux = () => {
                                         text="Razia"
                                     />
                                     <Accordion
-                                        title="3. React JS"
-                                        content="React JS - это JavaScript-библиотека для разработки пользовательского интерфейса. Она позволяет создавать компоненты, которые представляют собой независимые и переиспользуемые блоки кода, отвечающие за отображение данных и взаимодействие с пользователем."
+                                    title="3. UX/UIга аналитика"
+                                    content="
+                                    Сайттын максаты:
+                                    Максаттуу аудиторияны аныктоо,
+                                    Маркетинг триггерлери,
+                                    Контентти кайдан тапса болот?
+                                    User Experience"
                                     />
+                                    <Accordion
+                                        title="4. Техникалык тапшырма менен иштөө"
+                                        content="
+                                        Кардар менен иштөө,
+                                            Келишимди туура багытта кою,
+                                            Ортодогу койгойлорду чечүү"
+                                    />
+                                    <Accordion
+                                    title="5. Визитка сайт"
+                                    content="
+                                         UI-кит,
+                                            Биринчи экран эрежеси,
+                                            Иконкалар менен иштөө тартиби,
+                                            Биринчи экранды тартуу үчүн текшерүү тизмеси,
+                                    "
+                                    />
+                                    <Accordion
+                                    title="6. Landing page"
+                                    content="
+                                        Идея издөө шилтемелерди тандоо жана алгачкы кадамдар,
+                                        Биринчи эскиздер менен иштөө,
+                                        Дизайндагы деталдар,
+                                        Дизайнды анимацияга салуу.
+                                    "
+                                    />
+                                    <Accordion
+                                    title="7. User flow, wereframe"
+                                    content="Behanске жүктөө,
+                                                Кошумча элементтердин үстүндө иштөө,
+                                                Сайттын мобильдик түрү"
+                                    />
+                                    <Accordion
+                                    title="8. Интернет-магазин"
+                                    content="
+                                        Товардык топ:
+                                        Биринчи экран, Биз жөнүндө, Колонтитул, Рахмат терезеси.
+                                        Тавардын карточкасы,
+                                        Дизайнды оформления кылып Behanceке жүктөө.
+                                    "/>
                                 </div>
                             </div>
                         </div>
 
                         <div className="backend--diploma">
-                            <h1>Дипломные проекты</h1>
-                            <p>1. Landing Page </p>
+                            <h1>{formatMessage({id:"pro"})}</h1>
+                            <p>1. Лендинг</p>
                             <p>2. Сайт</p>
-                            <p>3. Интернет магазин</p>
-                            <p>4. С чем мы будем и как будем работать</p>
+                            <p>{formatMessage({id:"shop"})}</p>
+                            <p>3. Трекер задач по системе «Помодоро»
+                            </p>
                         </div>
 
                         <div className="backend--mentors">

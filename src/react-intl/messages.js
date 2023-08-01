@@ -4,7 +4,7 @@ import {Header} from "./../react-intl/messages/header";
 // import {Front} from "./messages/front";
 // import {Contact} from "./messages/contact";
 import {Students} from "./../react-intl/messages/students";
-// import {Ux} from "./messages/ux"
+import {Ux} from "./../react-intl/messages/ux";
 // import {Flutter} from "./messages/flutter";
 // import {Backend} from "./messages/backend";
 import {Mentors} from "./../react-intl/messages/mentors";
@@ -26,7 +26,7 @@ export const MESSAGES = {
         // // ...Review[LOCALES.KYRGYZ],
         ...Students[LOCALES.KYRGYZ],
         // ...Front[LOCALES.KYRGYZ],
-        // ...Ux[LOCALES.KYRGYZ],
+        ...Ux[LOCALES.KYRGYZ],
         // ...Flutter[LOCALES.KYRGYZ],
         // ...Backend[LOCALES.KYRGYZ],
     },
@@ -41,7 +41,7 @@ export const MESSAGES = {
         // // ...Review[LOCALES.RUSSIAN],
         ...Students[LOCALES.RUSSIAN],
         // ...Front[LOCALES.RUSSIAN],
-        // ...Ux[LOCALES.RUSSIAN],
+        ...Ux[LOCALES.RUSSIAN],
         // ...Flutter[LOCALES.RUSSIAN],
         // ...Backend[LOCALES.RUSSIAN],
     }

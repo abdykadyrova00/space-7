@@ -11,6 +11,8 @@ import html from './../../assets/img/html.png'
 import js from './../../assets/img/js.svg'
 import react from './../../assets/img/react.png'
 import fon from './../../assets/img/fon.jpg'
+import {Link} from "react-router-dom";
+import str from "../../assets/img/str.svg";
 
 
 const Front = () => {
@@ -20,9 +22,11 @@ const Front = () => {
     }, [])
 
     return (
-        <section id="backend">
+        <section id="front">
             <div className="detail_page">
                 <div className="container">
+                    <Link to={'/'}><img src={str} alt="img"/></Link>
+
                     <h1>FRONT-END DEVELOPER</h1>
                     <p>Вы начнете с основ верстки и JAVASCRIPT, а к концу обучения научитесь
                         делать корпоративные сервисы. Получите опыт работы в команде

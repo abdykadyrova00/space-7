@@ -1,7 +1,6 @@
 #menu__toggle {
     opacity: 0;
 }
-
 #menu__toggle:checked ~ .menu__btn > span {
     transform: rotate(45deg);
 }
@@ -80,6 +79,12 @@
 .lang{
     color: #FFFFFF;
     font-size: 30px;
+
+}
+.lang-div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .border{
