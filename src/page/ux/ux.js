@@ -14,6 +14,8 @@ import js from './../../assets/img/js.svg'
 import react from './../../assets/img/react.png'
 
 import fon from './../../assets/img/fon.jpg'
+import front from "../front/front";
+import finalPropsSelectorFactory from "react-redux/es/connect/selectorFactory";
 
 
 
@@ -24,14 +26,15 @@ const Ux = () => {
     }, [])
     return (
         <section id="backend">
-            <div className="detail_page">
+            <div className="task">
                 <div className="container">
                     <h1>UX/UI дизайнер</h1>
-                    <p>UX/UI дизайны боюнча ар тараптуу
-                        билимге ээ болуп, 100 доллардан 1 миллион долларга чейин киреше таба баштаңыз, чоң долбоорлордо чоң компанияда иштеп өз клечегиңизге кадам таштаңыз.
+                    <p>
+                        {formatMessage({id:"designer"})}
                     </p>
                     <ul>
-                        <li>Курсту мыкты денгээлде аяктаган студенттерге сертификат+жумушка
+                        <li>
+                            {formatMessage({id:"course"})}
                         </li>
                     </ul>
                 </div>
@@ -42,27 +45,59 @@ const Ux = () => {
                         <div className="backend--backFlex">
                             <div className="backend--backFlex__blocks">
                                 <div className="backend--backFlex__blocks--detail">
-                                    <h1>Программа</h1>
-                                    <p>Основные курсы</p>
+                                    <h1>{formatMessage({id:"program"})}</h1>
+                                    <p>{formatMessage({id:"space"})}</p>
                                     <Accordion
-                                        title="1.Киришүү"
+                                        title={formatMessage({id:"introduction"})}
                                         content={formatMessage({id:"ux"})}
                                     />
                                     <Accordion
-                                        title="2. Техникалык негиздер"
+                                        title={formatMessage({id:"ux-ui"})}
                                         content={formatMessage({id:"ux-content"})}
                                         text="Razia"
                                     />
                                     <Accordion
-                                        title="3. React JS"
-                                        content=""
+                                        title={formatMessage({id:"ui"})}
+                                        content={formatMessage({id:"ux-title"})}
                                     />
+
+                                    <Accordion
+                                        title={formatMessage({id:"accordion"})}
+                                        content={formatMessage({id:"title"})}
+                                    />
+                                    <Accordion
+                                        title={formatMessage({id:"logo"})}
+                                        content={formatMessage({id:"from"})}
+                                    />
+                                    <Accordion
+                                        title={formatMessage({id:"page"})}
+                                        content={formatMessage({id:"figma"})}
+                                    />
+                                    <Accordion
+                                        title={formatMessage({id:"landing"})}
+                                        content={formatMessage({id:"user"})}
+                                    />
+                                    <Accordion
+                                        title={formatMessage({id:"shop"})}
+                                        content={formatMessage({id:"shop-user"})}
+                                    />
+                                </div>
+                                <div className="backend--block">
+                                    <div className="backend--block__textCourse">
+                                        <span>Курс</span>
+                                        <h1>UX/UI DEVELOPER</h1>
+                                        <p>
+                                            {formatMessage({id:"block"})}
+                                        </p>
+                                        <h1>{formatMessage({id:"price"})}</h1>
+                                        <a href={"#"}>{formatMessage({id:"enroll"})}</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         <div className="backend--diploma">
-                            <h1>Дипломные проекты</h1>
+                            <h1>{formatMessage({id:"project"})}</h1>
                             <p>1. Landing Page </p>
                             <p>2. Сайт</p>
                             <p>3. Интернет магазин</p>
@@ -70,7 +105,7 @@ const Ux = () => {
                         </div>
 
                         <div className="backend--mentors">
-                            <h1>Наши менторы</h1>
+                            <h1>{formatMessage({id:"mentors"})}</h1>
                             <div className="backend--mentors__group">
                                 <div className="backend--mentors__group--mentorPhoto">
                                     <img src={brat1} alt=""/>
@@ -90,7 +125,7 @@ const Ux = () => {
                         </div>
 
                         <div className="backend--question">
-                            <h1>Чему вы научитесь?</h1>
+                            <h1>{formatMessage({id:"why"})}</h1>
                             <div className="backend--question__questionFlex">
                                 <div className="backend--question__questionFlex--icons">
                                     <img src={icon1} alt="img"/>
@@ -105,56 +140,32 @@ const Ux = () => {
                                 </div>
                                 <div className="backend--question__questionFlex--textQuestion">
                                     <div>
-                                        <h4>Верстать сайт</h4>
-                                        <p>Детально изучите все возможности современного CSS, научитесь верстать
-                                            адаптивныесайты, которыми удобно пользоваться. Сделаете проекты
-                                            эстетичнее при помощианимаций и переходов.</p>
+                                        <h4>{formatMessage({id:"sait"})}</h4>
+                                        <p>{formatMessage({id:"icon"})}</p>
                                     </div>
                                     <div>
-                                        <h4>Java Script</h4>
-                                        <p>Будете проектировать логику работы сайта. От простого модального окнадо
-                                            асинхронной загрузки данных с сервера и программирования enterprise-
-                                            приложений.Без стресса выучите один из
-                                            самых популярных языков программирования.</p>
+                                        <h4>{formatMessage({id:"notes"})}</h4>
+                                        <p>{formatMessage({id:"script"})}</p>
                                     </div>
                                     <div>
-                                        <h4>Framework</h4>
-                                        <p>С помощью фреймворков вы сможете быстрее разрабатывать сложные
-                                            веб-сервисы, а ещё они эффективнее расходуют ресурсы браузера.
-                                            Вы сами выбираете, что учить — React или Vue..</p>
+                                        <h4>{formatMessage({id:"framework"})}</h4>
+                                        <p>{formatMessage({id:"framework-text"})}</p>
                                     </div>
                                     <div>
-                                        <h4>Работать с GIT</h4>
-                                        <p>Будете сохранять все этапы работы над проектами, чтобы у коллег всегда был
-                                            доступ к коду, а случайные ошибки можно было исправить в два клика</p>
+                                        <h4>{formatMessage({id:"git"})}</h4>
+                                        <p>{formatMessage({id:"work"})}</p>
                                     </div>
                                     <div>
-                                        <h4>Красота в команде</h4>
-                                        <p>Научитесь работать по спринтам и Scrum-методологии. Под руководством
-                                            тимлидавместе  с другими студентами напишете веб-приложение.</p>
+                                        <h4>{formatMessage({id:"beauty"})}</h4>
+                                        <p>{formatMessage({id:"student"})}</p>
                                     </div>
                                 </div>
                             </div>
 
                         </div>
                     </div>
-                    <div className="backend--block">
-                        <div className="backend--block__textCourse">
-                            <span>Курс</span>
-                            <h1>FRONT-END DEVELOPER</h1>
-                            <p>
-                                Курс длится 7 месяцев -
-                                6 месяц обучение
-                                1 месяц стажировка
-                            </p>
-                            <h1>10 000 cом в месяц</h1>
-                            <a href={"#"}>Записаться</a>
-                        </div>
-                    </div>
 
                 </div>
-
-
             </div>
 
         </section>

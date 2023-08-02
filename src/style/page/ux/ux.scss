@@ -1,6 +1,6 @@
 
 #backend {
-  .detail_page{
+  .task{
     background: url("./../../../assets/img/hero2.png") no-repeat center/cover;
     min-height: 100vh;
     h1{
@@ -253,7 +253,74 @@
       display: flex;
     }
   }
+}
 
+@media screen and  (max-width:1024px){
+  #backend{
+    .task{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+        h1{
+          color: #FFF;
+          font-size: 28px;
+          font-weight: 800;
+          text-align: center;
+        }
+    }
+    .backend{
+      &--backFlex__blocks{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+@media screen and  (max-width: 992px){
+  #backend{
+    .detail--page{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
 
+    }
+    .backend{
+      &--backFlex__blocks{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+
+@media screen and  (max-width: 768px){
+  #course {
+    .course{
+      &--courseFlex{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__cour{
+          width: 100%;
+          position: unset;
+        }
+
+        &__blocks{
+          width: 100%;
+        }
+
+      }
+      h1{ width: 100%; text-align: left;}
+
+    }
+
+  }
+
+  #course .course h1{ width: 100%; text-align: left;}
 
 }

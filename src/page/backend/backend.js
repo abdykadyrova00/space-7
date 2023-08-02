@@ -52,8 +52,8 @@ const Backend = () => {
                         <div className="backend--backFlex">
                             <div className="backend--backFlex__blocks">
                                 <div className="backend--backFlex__blocks--detail">
-                                    <h1>Программа</h1>
-                                    <p>Основные курсы</p>
+                                    <h1>{formatMessage({id:"program"})}</h1>
+                                    <p>{formatMessage({id:"space"})}</p>
                                     <Accordion
                                         img={html}
                                         title="1. Веб - верстка"
@@ -85,13 +85,13 @@ const Backend = () => {
                         </div>
 
                         <div className="backend--diploma">
-                            <h1>Дипломные проекты</h1>
-                           <p>Интернет магазин</p>
-                            <p>Сайт по желанию</p>
+                            <h1>{formatMessage({id:"diploma"})}</h1>
+                           <p>{formatMessage({id:"shops"})}</p>
+                            <p>{formatMessage({id:"todo"})}</p>
                         </div>
 
                         <div className="backend--mentors">
-                            <h1>Наши менторы</h1>
+                            <h1>{formatMessage({id:"mentors"})}</h1>
                             <div className="backend--mentors__group">
                                 <div className="backend--mentors__group--mentorPhoto">
                                     <img src={brat1} alt=""/>
@@ -111,7 +111,7 @@ const Backend = () => {
                         </div>
 
                         <div className="backend--question">
-                            <h1>Чему вы научитесь?</h1>
+                            <h1>{formatMessage({id:"why"})}</h1>
                             <div className="backend--question__questionFlex">
                                 <div className="backend--question__questionFlex--icons">
                                     <img src={icon1} alt="img"/>
@@ -126,33 +126,24 @@ const Backend = () => {
                                 </div>
                                 <div className="backend--question__questionFlex--textQuestion">
                                     <div>
-                                        <h4>Верстать сайт</h4>
-                                        <p>Детально изучите все возможности современного CSS, научитесь верстать
-                                            адаптивныесайты, которыми удобно пользоваться. Сделаете проекты
-                                            эстетичнее при помощианимаций и переходов.</p>
+                                        <h4>{formatMessage({id:"sait"})}</h4>
+                                        <p>{formatMessage({id:"icon"})}</p>
                                     </div>
                                     <div>
-                                        <h4>Java Script</h4>
-                                        <p>Будете проектировать логику работы сайта. От простого модального окнадо
-                                            асинхронной загрузки данных с сервера и программирования enterprise-
-                                            приложений.Без стресса выучите один из
-                                            самых популярных языков программирования.</p>
+                                        <h4>{formatMessage({id:"notes"})}</h4>
+                                        <p>{formatMessage({id:"script"})}</p>
                                     </div>
                                     <div>
-                                        <h4>Framework</h4>
-                                        <p>С помощью фреймворков вы сможете быстрее разрабатывать сложные
-                                            веб-сервисы, а ещё они эффективнее расходуют ресурсы браузера.
-                                            Вы сами выбираете, что учить — React или Vue..</p>
+                                        <h4>{formatMessage({id:"framework"})}</h4>
+                                        <p>{formatMessage({id:"framework-text"})}</p>
                                     </div>
                                     <div>
-                                        <h4>Работать с GIT</h4>
-                                        <p>Будете сохранять все этапы работы над проектами, чтобы у коллег всегда был
-                                            доступ к коду, а случайные ошибки можно было исправить в два клика</p>
+                                        <h4>{formatMessage({id:"git"})}</h4>
+                                        <p>{formatMessage({id:"work"})}</p>
                                     </div>
                                     <div>
-                                        <h4>Красота в команде</h4>
-                                        <p>Научитесь работать по спринтам и Scrum-методологии. Под руководством
-                                            тимлидавместе  с другими студентами напишете веб-приложение.</p>
+                                        <h4>{formatMessage({id:"beauty"})}</h4>
+                                        <p>{formatMessage({id:"student"})}</p>
                                     </div>
                                 </div>
                             </div>
@@ -164,12 +155,10 @@ const Backend = () => {
                             <span>Курс</span>
                             <h1>PYTHON DEVELOPER</h1>
                             <p>
-                                Курс длится 7 месяцев -
-                                6 месяц обучение
-                                1 месяц стажировка
+                                {formatMessage({id:"block"})}
                             </p>
-                            <h1>10 000 cом в месяц</h1>
-                            <a href={`https://wa.me/${myNumber}?text=%20Саламатсызбы%20мен%20Backend-курсу%20%20боюунча малымат алайын дегем%20`}>Записаться</a>
+                            <h1>{formatMessage({id:"price"})}</h1>
+                            <a href={`https://wa.me/${myNumber}?text=%20Саламатсызбы%20мен%20Backend-курсу%20%20боюунча малымат алайын дегем%20`}>{formatMessage({id:"enroll"})}</a>
                         </div>
                     </div>
 
