@@ -18,7 +18,7 @@ const Course = () => {
                     <h1>Курсы</h1>
                     <div className="course--courseFlex">
                         <div className="course--courseFlex__cour">
-                            <h3>Все направлении</h3>
+                           <label htmlFor="all"><p>Вcе направлении</p></label>
                             <label htmlFor="front"><p> Front-End develop</p></label>
                             <label htmlFor="back"><p> Back-End develop</p></label>
                             <label htmlFor="ux"><p>UX/UI Design</p></label>

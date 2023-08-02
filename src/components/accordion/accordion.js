@@ -3,6 +3,7 @@ import img1 from "./../../assets/img/img_icon2.png";
 
 import React, {useEffect, useRef, useState} from "react";
 import "./../../App.css";
+import {AiOutlineMinusCircle, AiOutlinePlusCircle} from "react-icons/ai";
 
 const Accordion = (props) => {
     const [active, setActive] = useState(false);
@@ -30,7 +31,7 @@ const Accordion = (props) => {
                         <img src={props.img} alt=""/>
                         <p className="accordion__title">{props.title}</p>
                     </div>
-                    <span>{active ? <img src={img1} alt="+"/> : <img src={img2} alt="-"/>}</span>
+                    <span>{active ?  <AiOutlineMinusCircle/> :<AiOutlinePlusCircle/>}</span>
                 </div>
 
                 <div

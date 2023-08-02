@@ -10,22 +10,31 @@ import icon5 from './../../assets/img/icon5.svg'
 import html from './../../assets/img/html.png'
 import js from './../../assets/img/js.svg'
 import react from './../../assets/img/react.png'
+import fon from './../../assets/img/fon.jpg'
+import {Link} from "react-router-dom";
+import str from "../../assets/img/str.svg";
 import {useIntl} from "react-intl";
 
 
 const Front = () => {
 
+<<<<<<< HEAD
+    const { formatMessage } = useIntl();
+=======
 
     const { formatMessage } = useIntl();
 
+>>>>>>> 6bd1847d5597bef6ff2499b16cf884f7719c0619
     useEffect(() => {
         window.scroll(0, 0)
     }, [])
 
     return (
-        <section id="backend">
+        <section id="front">
             <div className="detail_page">
                 <div className="container">
+                    <Link to={'/'}><img src={str} alt="img"/></Link>
+
                     <h1>FRONT-END DEVELOPER</h1>
                     <p>{formatMessage({id:"front"})}</p>
                     <ul>

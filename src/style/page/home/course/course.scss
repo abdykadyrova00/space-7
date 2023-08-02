@@ -161,6 +161,12 @@
   display: none;
 }
 
+#all:checked ~ .tabs-back,
+#all:checked ~ .tabs-ux,
+#all:checked ~ .tabs-front {
+  display: block;
+}
+
 #back:checked ~ .tabs-front,
 #back:checked ~ .tabs-ux,
 #back:checked ~ .tabs-flutter {
