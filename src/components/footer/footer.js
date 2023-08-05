@@ -15,10 +15,14 @@ const Footer = () => {
                     <div className="footer--card">
                     <img src={logo} alt="img"/>
                     <div className="footer--card__about">
-                        <a>{formatMessage({id:"house"})}</a>
-                        <a>{formatMessage({id:"follow"})}</a>
-                        <a>{formatMessage({id:"course"})}</a>
-                        <a>{formatMessage({id:"review"})}</a>
+                        <div>
+                            <a>{formatMessage({id:"house"})}</a>
+                            <a>{formatMessage({id:"follow"})}</a>
+                        </div>
+                        <div>
+                            <a>{formatMessage({id:"course"})}</a>
+                            <a>{formatMessage({id:"review"})}</a>
+                        </div>
                     </div>
 
                     <div className="footer--card__icon">

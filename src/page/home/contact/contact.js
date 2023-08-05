@@ -46,6 +46,34 @@ const Contact = () => {
                 </div>
                 </div>
             </div>
+            <div className="group2">
+                <div className="group2--contAll">
+                    <div>
+                        <BsFillTelephoneInboundFill/>
+                        <a href="tel:+996 220 069 456">+996 220 069 456</a>
+                    </div>
+
+                    <div>
+                        <BsChatLeftFill/>
+                        <a href="mailto:itspaceacademy@gmail.com">itspaceacademy@gmail.com</a>
+                    </div>
+
+                    <div>
+                        <BsGeoAltFill/>
+                        <a href="https://goo.gl/maps/njFSQs4ks5ftdWbR6?coh=178572&entry=tt">Ибраимова 115/4
+                            (Дордой плаза)</a>
+                    </div>
+
+                    <div className="group2--icon">
+                        <a href={`https://wa.me/${myNumber}?text=%20Саламатсызбы%20мен%20курстар%20%20боюунча малымат алайын дегем%20`}><AiOutlineWhatsApp/></a>
+                        <a href="https://www.instagram.com/itspace_kg/"><AiFillInstagram/></a>
+                        <a href="https://web.telegram.org/k/#@nurbakytkarimov"><FaTelegram/></a>
+                    </div>
+                </div>
+
+
+            </div>
+
         </section>
     );
 };

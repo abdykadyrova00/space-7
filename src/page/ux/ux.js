@@ -2,38 +2,29 @@
 import React, {useEffect} from 'react';
 import Accordion from "../../components/accordion/accordion";
 import brat1 from './../../assets/img/brat.svg'
-import in_img from './../../assets/img/in_img.svg'
 import icon1 from  './../../assets/img/icon1.svg'
 import icon2 from  './../../assets/img/icon2.svg'
 import icon3 from  './../../assets/img/icon3.svg'
 import icon4 from  './../../assets/img/icon4.png'
 import icon5 from  './../../assets/img/icon5.svg'
 import {useIntl} from "react-intl";
-import html from './../../assets/img/html.png'
-import js from './../../assets/img/js.svg'
-import react from './../../assets/img/react.png'
-
-import fon from './../../assets/img/fon.jpg'
-<<<<<<< HEAD
 import {Link} from "react-router-dom";
 import str from "../../assets/img/str.svg";
-import {useIntl} from "react-intl";
 
 
 const Ux = () => {
 
     const {formatMessage} = useIntl()
 
-=======
 
 
 
 const Ux = () => {
     const {formatMessage} = useIntl()
->>>>>>> 6bd1847d5597bef6ff2499b16cf884f7719c0619
     useEffect(() => {
         window.scroll(0, 0)
     }, [])
+}
     return (
         <section id="ux">
             <div className="detail_page">
@@ -57,7 +48,6 @@ const Ux = () => {
                                     <h1>Программа</h1>
                                     <p>Основные курсы</p>
                                     <Accordion
-<<<<<<< HEAD
                                         title={formatMessage({id:"title"})}
                                         content="Веб-дизайндын тарыхы.
                                                     Веб-дизайнер менен UX/UI дизайнердин айрмасы?
@@ -65,10 +55,8 @@ const Ux = () => {
                                                     Figma программасы менен таанышуу.
                                                     Figma программасындагы инстурменттери менен таанышуу.
                                                     Плагиндер менен таанышуу жана орнотуу "
-=======
                                         title="1.Киришүү"
                                         content={formatMessage({id:"ux"})}
->>>>>>> 6bd1847d5597bef6ff2499b16cf884f7719c0619
                                     />
                                     <Accordion
                                         title="2. Техникалык негиздер"
@@ -76,7 +64,6 @@ const Ux = () => {
                                         text="Razia"
                                     />
                                     <Accordion
-<<<<<<< HEAD
                                     title="3. UX/UIга аналитика"
                                     content="
                                     Сайттын максаты:
@@ -84,10 +71,8 @@ const Ux = () => {
                                     Маркетинг триггерлери,
                                     Контентти кайдан тапса болот?
                                     User Experience"
-=======
                                         title="3. React JS"
                                         content=""
->>>>>>> 6bd1847d5597bef6ff2499b16cf884f7719c0619
                                     />
                                     <Accordion
                                         title="4. Техникалык тапшырма менен иштөө"
@@ -231,12 +216,6 @@ const Ux = () => {
 
         </section>
 
-<<<<<<< HEAD
-=======
-
-
-
->>>>>>> 6bd1847d5597bef6ff2499b16cf884f7719c0619
     );
 };
 

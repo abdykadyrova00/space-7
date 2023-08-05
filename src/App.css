@@ -112,3 +112,9 @@
     font-size: 18px;
     font-weight: 400;
 }
+
+@media (max-width: 450px) {
+    .menu__box{
+        width: 430px;
+    }
+}

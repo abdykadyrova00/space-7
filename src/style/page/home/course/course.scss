@@ -159,30 +159,35 @@
 #front:checked ~ .tabs-ux,
 #front:checked ~ .tabs-flutter {
   display: none;
+  transition: 1s;
 }
 
 #all:checked ~ .tabs-back,
 #all:checked ~ .tabs-ux,
 #all:checked ~ .tabs-front {
   display: block;
+  transition: 1s;
 }
 
 #back:checked ~ .tabs-front,
 #back:checked ~ .tabs-ux,
 #back:checked ~ .tabs-flutter {
   display: none;
+  transition: 1s;
 }
 
 #ux:checked ~ .tabs-back,
 #ux:checked ~ .tabs-front,
 #ux:checked ~ .tabs-flutter {
   display: none;
+  transition: 1s;
 }
 
 #flutter:checked ~ .tabs-back,
 #flutter:checked ~ .tabs-ux,
 #flutter:checked ~ .tabs-front {
   display: none;
+  transition: 1s;
 }
 
 @media screen and  (max-width: 992px){

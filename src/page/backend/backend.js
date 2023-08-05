@@ -11,17 +11,11 @@ import js from './../../assets/img/js.svg'
 import react from './../../assets/img/react.png'
 // import fon from './../../assets/img/fon.jpg'
 import {useIntl} from "react-intl";
-<<<<<<< HEAD
-import str from './../../assets/img/str.svg'
-import {Link} from "react-router-dom";
-=======
-
 import str from './../../assets/img/str.svg'
 import {Link} from "react-router-dom";
 
 
 
->>>>>>> 6bd1847d5597bef6ff2499b16cf884f7719c0619
 const Backend = () => {
      const {formatMessage}= useIntl()
     useEffect(() => {
@@ -29,27 +23,21 @@ const Backend = () => {
     }, [])
 
     // language=HTML
-<<<<<<< HEAD
-=======
 
->>>>>>> 6bd1847d5597bef6ff2499b16cf884f7719c0619
     const myNumber = +996224192939
 
     return (
         <section id="backend">
             <div className="detail_page">
                 <div className="container">
-<<<<<<< HEAD
                     <h1>PYTHON DEVELOPER</h1>
                    <Link to={'/'}><img src={str} alt="img"/></Link>
                     <h1>FRONT-END DEVELOPER</h1>
-=======
 
                     <h1>PYTHON DEVELOPER</h1>
                    <Link to={'/'}><img src={str} alt="img"/></Link>
                     <h1>FRONT-END DEVELOPER</h1>
 
->>>>>>> 6bd1847d5597bef6ff2499b16cf884f7719c0619
                     <p>Вы начнете с основ верстки и JAVASCRIPT, а к концу обучения научитесь
                         делать корпоративные сервисы. Получите опыт работы в команде
                         и начнете карьеру в сфере IT как веб-разработчика</p>

@@ -18,13 +18,8 @@ import {useIntl} from "react-intl";
 
 const Front = () => {
 
-<<<<<<< HEAD
-    const { formatMessage } = useIntl();
-=======
-
     const { formatMessage } = useIntl();
 
->>>>>>> 6bd1847d5597bef6ff2499b16cf884f7719c0619
     useEffect(() => {
         window.scroll(0, 0)
     }, [])

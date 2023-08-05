@@ -8,25 +8,13 @@ import * as PropTypes from "prop-types";
 import {useIntl} from "react-intl";
 Slider.propTypes = {children: PropTypes.node};
 const Review = () => {
-<<<<<<< HEAD
-
-    const {formatMessage} = useIntl()
-=======
-
 
     const {formatMessage} = useIntl()
 
->>>>>>> 6bd1847d5597bef6ff2499b16cf884f7719c0619
     let settings = {
         dots: true,
         infinite: false,
         speed: 500,
-<<<<<<< HEAD
-=======
-
-
-
->>>>>>> 6bd1847d5597bef6ff2499b16cf884f7719c0619
         slidesToShow: 4,
         autoplay:true,
         slidesToScroll: 4,
@@ -42,7 +30,7 @@ const Review = () => {
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 768,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
@@ -50,7 +38,7 @@ const Review = () => {
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 680,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1

@@ -5,7 +5,7 @@ export const Footer ={
         "house":"главная",
         "follow":"О нас",
         "course":"курсы",
-        "review":"отзыв"
+        "review":"отзыв",
     },
     [LOCALES.KYRGYZ]:{
         "house":"бакшы бет",

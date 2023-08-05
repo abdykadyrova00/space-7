@@ -25,10 +25,11 @@ const Course = () => {
                             {/*<label htmlFor="flutter"><p>Flutter</p></label>*/}
                         </div>
                         <div className="course--courseFlex__blocks">
+                            <input type="radio" name="tabs" id="all"/>
                             <input type="radio" name="tabs" id="front"/>
                             <input type="radio" name="tabs" id="back"/>
                             <input type="radio" name="tabs" id="ux"/>
-                            <input type="radio" name="tabs" id="flutter"/>
+                            {/*<input type="radio" name="tabs" id="flutter"/>*/}
 
                             <div className="course--courseFlex__blocks--front  tabs-front">
                                 <div className="course--courseFlex__blocks--front__cards">

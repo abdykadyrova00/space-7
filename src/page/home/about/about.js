@@ -134,25 +134,31 @@ const About = () => {
                             </div>
                         </div>
 
-                        <div className="video_block">
-                            <div className="blue">
-                                <div className="card">
-                                    <div className="title" ref={blockRef}>
+                        <div className="about--video__video_block">
+                            <div className="about--video__video_block--blue">
+                                <div className="about--video__video_block--blue__card">
+                                    <div className="about--video__video_block--blue__card--title" ref={blockRef}>
                                         +{count1}
                                     </div>
 
-                                    <div className="text">
-                                        Студентов
+                                    <div className="about--video__video_block--blue__card--text">
+                                        <p>
+                                            Студентов
+                                        </p>
+
                                     </div>
                                 </div>
 
-                                <div className="card">
-                                    <div className="title" ref={blockRef}>
+                                <div className="about--video__video_block--blue__card">
+                                    <div className="about--video__video_block--blue__card--title" ref={blockRef}>
                                         +{count2}
                                     </div>
 
-                                    <div className="text">
-                                        Выпускников
+                                    <div className="about--video__video_block--blue__card--text">
+                                        <p>
+                                            Выпускников
+
+                                        </p>
                                     </div>
                                 </div>
                             </div>

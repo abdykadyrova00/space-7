@@ -5,12 +5,7 @@ import {Footer} from "./../react-intl/messages/footer"
 import {Front} from "./../react-intl/messages/front"
 import {Contact} from "./messages/contact";
 import {Students} from "./../react-intl/messages/students";
-<<<<<<< HEAD
 import {Ux} from "./../react-intl/messages/ux";
-=======
-import {Ux} from "./messages/ux"
->>>>>>> 6bd1847d5597bef6ff2499b16cf884f7719c0619
-// import {Flutter} from "./messages/flutter";
 import {Backend} from "./messages/backend";
 import {Mentors} from "./../react-intl/messages/mentors";
 import {About} from "./messages/about";
