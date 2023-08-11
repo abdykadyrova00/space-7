@@ -30,7 +30,7 @@ const Review = () => {
                 }
             },
             {
-                breakpoint: 768,
+                breakpoint: 992,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
@@ -50,7 +50,7 @@ const Review = () => {
     return (
         <section id="review">
             <div className="container">
-                <h1>{formatMessage({id:"student"})}</h1>
+                <h1>{formatMessage({id:"speak"})}</h1>
                 <div className="review">
                     <Slider {...settings}>
                     <div className="review--group">

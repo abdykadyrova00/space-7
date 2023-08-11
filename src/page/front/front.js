@@ -23,13 +23,13 @@ const Front = () => {
     useEffect(() => {
         window.scroll(0, 0)
     }, [])
+    const myNumber = +996224192939
 
     return (
         <section id="front">
             <div className="detail_page">
                 <div className="container">
                     <Link to={'/'}><img src={str} alt="img"/></Link>
-
                     <h1>FRONT-END DEVELOPER</h1>
                     <p>{formatMessage({id:"front"})}</p>
                     <ul>
@@ -40,17 +40,17 @@ const Front = () => {
                 </div>
             </div>
             <div className="container">
-                <div className="backend">
+                <div className="front">
                     <div>
-                        <div className="backend--backFlex">
-                            <div className="backend--backFlex__blocks">
-                                <div className="backend--backFlex__blocks--detail">
+                        <div className="front--backFlex">
+                            <div className="front--backFlex__blocks">
+                                <div className="front--backFlex__blocks--detail">
                                     <h1>{formatMessage({id:"program"})}</h1>
-                                    <p>{formatMessage({id:"course"})}</p>
+                                    <p>{formatMessage({id:"courseFront"})}</p>
                                     <Accordion
                                         img={html}
                                         title="1. Веб - верстка"
-                                        content={formatMessage({id:"page"})}
+                                        content={formatMessage({id:"pages"})}
                                     />
                                     <Accordion
                                         img={js}
@@ -72,28 +72,71 @@ const Front = () => {
                                 </div>
                             </div>
                         </div>
+                        <div className="front--backFlex2">
+                            <div className="front--backFlex2__blocks2">
+                                <div className="front--backFlex2__blocks2--detail2">
+                                    <h1>{formatMessage({id:"program"})}</h1>
+                                    <p>{formatMessage({id:"courseFront"})}</p>
+                                    <Accordion
+                                        img={html}
+                                        title="1. Веб - верстка"
+                                        content={formatMessage({id:"pages"})}
+                                    />
+                                    <Accordion
+                                        img={js}
+                                        title="2. JavaScript"
+                                        content={formatMessage({id:"learning"})}
 
-                        <div className="backend--diploma">
+                                    />
+                                    <Accordion
+                                        img={js}
+                                        title="2.  JAVASCRIPT - DOM"
+                                        content={formatMessage({id:"dom"})}
+
+                                    />
+                                    <Accordion
+                                        img={react}
+                                        title="3. React JS"
+                                        content={formatMessage({id:"front-page"})}
+                                    />
+                                </div>
+                                <div className="front--backFlex2__blocks2--block2">
+                                    <div className="front--backFlex2__blocks2--block2__textCourse">
+                                        <span>Курс</span>
+                                        <h1>FRONT-END DEVELOPER</h1>
+                                        <p>
+                                            Курс длится 7 месяцев -
+                                            6 месяц обучение
+                                            1 месяц стажировка
+                                        </p>
+                                        <h1>10 000 cом в месяц</h1>
+                                        <a href={`https://wa.me/${myNumber}?text=%20Саламатсызбы%20мен%20курстар%20%20боюунча малымат алайын дегем%20`}>Записаться</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="front--diploma">
                             <h1>{formatMessage({id:"diploma"})}</h1>
                             <p>1. Landing Page </p>
                             <p>{formatMessage({id:"movie"})}</p>
-                            <p>{formatMessage({id:"shop"})}</p>
-                            <p>{formatMessage({id:"project"})}</p>
+                            <p>{formatMessage({id:"shop2"})}</p>
+                            <p>{formatMessage({id:"project3"})}</p>
                         </div>
 
-                        <div className="backend--mentors">
+                        <div className="front--mentors">
                             <h1>{formatMessage({id:"mentor"})}</h1>
-                            <div className="backend--mentors__group">
-                                <div className="backend--mentors__group--mentorPhoto">
+                            <div className="front--mentors__group">
+                                <div className="front--mentors__group--mentorPhoto">
                                     <img src={brat1} alt=""/>
-                                    <div className="backend--mentors__group--mentorPhoto__fio">
+                                    <div className="front--mentors__group--mentorPhoto__fio">
                                         <h4>Баланчаев Тукунчо</h4>
                                         <h4>UX/UI Designer</h4>
                                     </div>
                                 </div>
-                                <div className="backend--mentors__group--mentorPhoto">
+                                <div className="front--mentors__group--mentorPhoto">
                                     <img src={brat1} alt=""/>
-                                    <div className="backend--mentors__group--mentorPhoto__fio">
+                                    <div className="front--mentors__group--mentorPhoto__fio">
                                         <h4>Баланчаев Тукунчо</h4>
                                         <h4>UX/UI Designer</h4>
                                     </div>
@@ -101,10 +144,10 @@ const Front = () => {
                             </div>
                         </div>
 
-                        <div className="backend--question">
+                        <div className="front--question">
                             <h1>Чему вы научитесь?</h1>
-                            <div className="backend--question__questionFlex">
-                                <div className="backend--question__questionFlex--icons">
+                            <div className="front--question__questionFlex">
+                                <div className="front--question__questionFlex--icons">
                                     <img src={icon1} alt="img"/>
                                     <div></div>
                                     <img src={icon2} alt="img"/>
@@ -115,7 +158,7 @@ const Front = () => {
                                     <div></div>
                                     <img src={icon5} alt="img"/>
                                 </div>
-                                <div className="backend--question__questionFlex--textQuestion">
+                                <div className="front--question__questionFlex--textQuestion">
                                     <div>
                                         <h4>{formatMessage({id:"website"})}</h4>
                                         <p>{formatMessage({id:"website-text"})}</p>
@@ -128,7 +171,7 @@ const Front = () => {
                                     </div>
                                     <div>
                                         <h4>Framework</h4>
-                                        <p>{formatMessage({id:"framework"})}</p>
+                                        <p>{formatMessage({id:"framework1"})}</p>
                                     </div>
                                     <div>
                                         <h4>{formatMessage({id:"git"})}</h4>
@@ -142,9 +185,11 @@ const Front = () => {
                             </div>
 
                         </div>
+
                     </div>
-                    <div className="backend--block">
-                        <div className="backend--block__textCourse">
+
+                    <div className="front--block">
+                        <div className="front--block__textCourse">
                             <span>Курс</span>
                             <h1>FRONT-END DEVELOPER</h1>
                             <p>
@@ -153,7 +198,7 @@ const Front = () => {
                                 1 месяц стажировка
                             </p>
                             <h1>10 000 cом в месяц</h1>
-                            <a href={"#"}>Записаться</a>
+                            <a href={`https://wa.me/${myNumber}?text=%20Саламатсызбы%20мен%20курстар%20%20боюунча малымат алайын дегем%20`}>Записаться</a>
                         </div>
                     </div>
                 </div>

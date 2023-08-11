@@ -257,3 +257,40 @@
 
 
 }
+
+@media (max-width: 375px) {
+  #backend{
+    .detail_page{
+      h1{
+        font-size: 45px;
+      }
+      p{
+        width: 349px!important;
+        font-size: 20px;
+      }
+      ul{
+        li{
+          width: 210px;
+          font-size: 20px;
+        }
+      }
+
+    }
+    .accordion__section{
+      width: 340px;
+    }
+  }
+};
+@media(max-width:1200px){
+  .backend{
+    &--backFlex{
+      display:none;
+    };
+    &--block{
+      display: none!important;
+    };
+    &--backFlex2{
+      display: block!important;
+    };
+  }
+}

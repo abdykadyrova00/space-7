@@ -6,6 +6,7 @@ import {useIntl} from "react-intl";
 import {setLocale} from "../../redux/reducer/main";
 import {LOCALES} from "../../react-intl/locales";
 import {BsGlobeCentralSouthAsia} from "react-icons/bs";
+import {Link} from "react-router-dom";
 
 
 
@@ -43,7 +44,7 @@ const Header = () => {
             <div className="container">
                 <div className="header">
                     <div>
-                        <img src={logo} alt="img" />
+                       <Link to={"/"}><img src={logo} alt="img" /></Link>
                     </div>
                     <div className="hamburger-menu">
                         <input id="menu__toggle" type="checkbox"/>
@@ -66,11 +67,10 @@ const Header = () => {
                          </div>
                          <div>
                              <a className="menu__item" href="#">{formatMessage({id:"home"})}</a>
-                             <a className="menu__item" href="#">{formatMessage({id:"about"})}</a>
-                             <a className="menu__item" href="#">{formatMessage({id:"course"})}</a>
+                             <a className="menu__item" href="#">{formatMessage({id:"aboutH"})}</a>
+                             <a className="menu__item" href="#">{formatMessage({id:"courseH"})}</a>
                              <a className="menu__item" href="#">{formatMessage({id:"rew"})}</a>
                          </div>
-
                          <div className="sms">
                              <span>{formatMessage({"id":"set"})}</span>
                              <div>

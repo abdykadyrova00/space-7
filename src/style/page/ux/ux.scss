@@ -4,9 +4,10 @@
     background: url("./../../../assets/img/hero2.png") no-repeat center/cover;
     min-height: 100vh;
     img{
-      margin: 100px 30px;
+      padding-top: 150px;
     }
     h1{
+      padding-top: 224px;
       padding-left: 30px;
       color: #FFF;
       font-size: 65px;
@@ -31,7 +32,7 @@
     }
 
   }
-  .backend{
+  .ux{
     display: flex;
     justify-content: space-between;
     &--backFlex{
@@ -50,6 +51,7 @@
             color: #1E1E2F;
             font-size: 30px;
             font-weight: 600;
+            padding: 20px 0;
           }
         }
       }
@@ -114,8 +116,9 @@
       }
       &__questionFlex{
         display: flex;
+        gap: 20px;
         &--icons{
-          margin: 30px 0;
+          margin: 35px 0;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -129,7 +132,7 @@
           div{
             margin: 30px 0;
             h4{
-              padding-top: 5px;
+              padding-top: 4px;
               color: #1E1E2F;
               font-size: 20px;
               font-weight: 600;
@@ -175,13 +178,12 @@
 
   }
   .accordion__section {
-    margin-top: 56px;
-    border-top: 1px #D9D9D9 solid;
+    border-top: 1px rgb(38, 38, 38) solid;
     display: flex;
     width: 750px;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px #D9D9D9 solid;
+    border-bottom: 1px rgb(38, 38, 38) solid;
     .accordion {
       display: flex;
       width: 100%;
@@ -193,10 +195,6 @@
         width: 100%;
         justify-content: space-between;
         align-items: center;
-        img {
-          width: 28px;
-          margin-right: 10px;
-        }
         .title {
           display: flex;
           width: 90%;
@@ -215,90 +213,9 @@
           font-weight: 400;
         }
         span {
-          display: flex;
           cursor: pointer;
-          color: #D9D9D9;
-          font-size: 35px;
-          font-weight: 400;
-          width: 30px;
-          height: 30px;
-          justify-content: center;
-          align-items: center;
-          border: 1px solid #D9D9D9;
-          border-radius: 50%;
-          line-height: unset;
-          img {
-            width: 50%;
-            margin: 0;
-            padding: 0;
-          }
-
-        }
-      }
-      .accordion__content {
-        display: none;
-        width: 100%;
-        color: #000;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 25px;
-        max-height: unset;
-        height: auto;
-        .accordion__text {
-          padding-top: 10px;
-        }
-
-      }
-    }
-
-    .active .accordion__content {
-      display: flex;
-    }
-  }
-  .accordion__section {
-    margin-top: 56px;
-    border-top: 1px rgba(0, 0, 0, 0.53) solid;
-    display: flex;
-    width: 750px;
-    border-bottom: 1px rgba(0, 0, 0, 0.53) solid;
-    .accordion {
-      .line {
-        .title {
-          display: flex;
-          width: 90%;
-          align-items: center;
-          p {
-            padding: 0;
-            margin: 0;
-            border: none;
-          }
-        }
-        .accordion__title {
-          display: flex;
-          width: auto;
-          color: #000;
-          font-size: 22px;
-          font-weight: 400;
-        }
-        span {
-          display: flex;
-          cursor: pointer;
-          color: rgba(0, 0, 0, 0.53);
-          font-size: 35px;
-          font-weight: 400;
-          width: 50px;
-          height: 50px;
-          justify-content: center;
-          align-items: center;
-          border: 1px solid rgba(0, 0, 0, 0.53);
-          border-radius: 50%;
-          line-height: unset;
-          img {
-            width: 70%;
-            margin: 0;
-            padding: 0;
-          }
-
+          font-size: 55px;
+          font-weight: 700;
         }
       }
       .accordion__content {
@@ -322,5 +239,74 @@
     }
   }
 
+}
+
+@media screen and  (max-width:1024px){
+  #backend{
+    .task{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+        h1{
+          color: #FFF;
+          font-size: 28px;
+          font-weight: 800;
+          text-align: center;
+        }
+    }
+    .backend{
+      &--backFlex__blocks{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+@media screen and  (max-width: 992px){
+  #backend{
+    .detail--page{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+
+    }
+    .backend{
+      &--backFlex__blocks{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+
+@media screen and  (max-width: 768px){
+  #course {
+    .course{
+      &--courseFlex{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__cour{
+          width: 100%;
+          position: unset;
+        }
+
+        &__blocks{
+          width: 100%;
+        }
+
+      }
+      h1{ width: 100%; text-align: left;}
+
+    }
+
+  }
+
+  #course .course h1{ width: 100%; text-align: left;}
 
 }

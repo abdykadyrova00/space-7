@@ -36,11 +36,15 @@
           transition-duration: .25s;
         }
         h3:hover{
-          background: rgba(215, 205, 185, 0.91);
-        }
+          background: rgba(225, 215, 202, 0.91);
+          }
         p:hover{
-          background: rgba(215, 205, 185, 0.91);
+          background: rgba(169, 169, 190, 0.77);
           transition: .25s;
+          width: 310px;
+          height: 50px;
+          border-radius: 10px;
+          border: 2px solid rgba(38, 38, 38, 0.52);
         }
       }
 

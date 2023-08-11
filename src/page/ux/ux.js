@@ -8,15 +8,12 @@ import icon3 from  './../../assets/img/icon3.svg'
 import icon4 from  './../../assets/img/icon4.png'
 import icon5 from  './../../assets/img/icon5.svg'
 import {useIntl} from "react-intl";
+import html from './../../assets/img/html.png'
+
+import fon from './../../assets/img/fon.jpg'
+import finalPropsSelectorFactory from "react-redux/es/connect/selectorFactory";
 import {Link} from "react-router-dom";
 import str from "../../assets/img/str.svg";
-
-
-const Ux = () => {
-
-    const {formatMessage} = useIntl()
-
-
 
 
 const Ux = () => {
@@ -24,121 +21,92 @@ const Ux = () => {
     useEffect(() => {
         window.scroll(0, 0)
     }, [])
-}
+
+    const myNumber = +996224192939
+
     return (
         <section id="ux">
             <div className="detail_page">
                 <div className="container">
                     <Link to={'/'}><img src={str} alt="img"/></Link>
                     <h1>UX/UI дизайнер</h1>
-                    <p> {formatMessage({id:"ux-page"})}
+                    <p>
+                        {formatMessage({id:"designer"})}
                     </p>
                     <ul>
-                        <li>{formatMessage({id:"ux-text"})}
+                        <li>
+                            {formatMessage({id:"course"})}
                         </li>
                     </ul>
                 </div>
             </div>
             <div className="container">
-                <div className="backend">
+                <div className="ux">
                     <div>
-                        <div className="backend--backFlex">
-                            <div className="backend--backFlex__blocks">
-                                <div className="backend--backFlex__blocks--detail">
-                                    <h1>Программа</h1>
-                                    <p>Основные курсы</p>
+                        <div className="ux--backFlex">
+                            <div className="ux--backFlex__blocks">
+                                <div className="ux--backFlex__blocks--detail">
+                                    <h1>{formatMessage({id:"program"})}</h1>
+                                    <p>{formatMessage({id:"space"})}</p>
                                     <Accordion
-                                        title={formatMessage({id:"title"})}
-                                        content="Веб-дизайндын тарыхы.
-                                                    Веб-дизайнер менен UX/UI дизайнердин айрмасы?
-                                                    UX/UI дизайнер ким?
-                                                    Figma программасы менен таанышуу.
-                                                    Figma программасындагы инстурменттери менен таанышуу.
-                                                    Плагиндер менен таанышуу жана орнотуу "
-                                        title="1.Киришүү"
-                                        content={formatMessage({id:"ux"})}
+                                        title={formatMessage({id:"introduction"})}
+                                        content={formatMessage({id:"com"})}
                                     />
                                     <Accordion
-                                        title="2. Техникалык негиздер"
-                                        content={formatMessage({id:"ux-content"})}
-                                        text="Razia"
+                                        title={formatMessage({id:"ux-ui"})}
+                                        content={formatMessage({id:"tex"})}
                                     />
                                     <Accordion
-                                    title="3. UX/UIга аналитика"
-                                    content="
-                                    Сайттын максаты:
-                                    Максаттуу аудиторияны аныктоо,
-                                    Маркетинг триггерлери,
-                                    Контентти кайдан тапса болот?
-                                    User Experience"
-                                        title="3. React JS"
-                                        content=""
+                                        title={formatMessage({id:"ui"})}
+                                        content={formatMessage({id:"ana"})}
+                                    />
+
+                                    <Accordion
+                                        title={formatMessage({id:"accordion"})}
+                                        content={formatMessage({id:"acc"})}
                                     />
                                     <Accordion
-                                        title="4. Техникалык тапшырма менен иштөө"
-                                        content="
-                                        Кардар менен иштөө,
-                                            Келишимди туура багытта кою,
-                                            Ортодогу койгойлорду чечүү"
+                                        title={formatMessage({id:"logo"})}
+                                        content={formatMessage({id:"viz"})}
                                     />
                                     <Accordion
-                                    title="5. Визитка сайт"
-                                    content="
-                                         UI-кит,
-                                            Биринчи экран эрежеси,
-                                            Иконкалар менен иштөө тартиби,
-                                            Биринчи экранды тартуу үчүн текшерүү тизмеси,
-                                    "
+                                        title={formatMessage({id:"page"})}
+                                        content={formatMessage({id:"pag"})}
                                     />
                                     <Accordion
-                                    title="6. Landing page"
-                                    content="
-                                        Идея издөө шилтемелерди тандоо жана алгачкы кадамдар,
-                                        Биринчи эскиздер менен иштөө,
-                                        Дизайндагы деталдар,
-                                        Дизайнды анимацияга салуу.
-                                    "
+                                        title={formatMessage({id:"landing"})}
+                                        content={formatMessage({id:"user"})}
                                     />
                                     <Accordion
-                                    title="7. User flow, wereframe"
-                                    content="Behanске жүктөө,
-                                                Кошумча элементтердин үстүндө иштөө,
-                                                Сайттын мобильдик түрү"
+                                        title={formatMessage({id:"shop"})}
+                                        content={formatMessage({id:"shop-user"})}
                                     />
-                                    <Accordion
-                                    title="8. Интернет-магазин"
-                                    content="
-                                        Товардык топ:
-                                        Биринчи экран, Биз жөнүндө, Колонтитул, Рахмат терезеси.
-                                        Тавардын карточкасы,
-                                        Дизайнды оформления кылып Behanceке жүктөө.
-                                    "/>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="backend--diploma">
-                            <h1>{formatMessage({id:"pro"})}</h1>
+                        <div className="ux--diploma">
+                            <h1>{formatMessage({id:"project"})}</h1>
                             <p>1. Лендинг</p>
                             <p>2. Сайт</p>
-                            <p>{formatMessage({id:"shop"})}</p>
-                            <p>3. Трекер задач по системе «Помодоро»
+                            <p>3. Интернет-магазин</p>
+                            <p>4. Трекер задач по системе «Помодоро»
                             </p>
                         </div>
 
-                        <div className="backend--mentors">
-                            <h1>Наши менторы</h1>
-                            <div className="backend--mentors__group">
-                                <div className="backend--mentors__group--mentorPhoto">
+                        <div className="ux--mentors">
+                            <h1>{formatMessage({id:"mentors"})}</h1>
+                            <div className="ux--mentors__group">
+                                <div className="ux--mentors__group--mentorPhoto">
                                     <img src={brat1} alt=""/>
-                                    <div className="backend--mentors__group--mentorPhoto__fio">
+                                    <div className="ux--mentors__group--mentorPhoto__fio">
                                         <h4>Баланчаев Тукунчо</h4>
                                         <h4>UX/UI Designer</h4>
                                     </div>
                                 </div>
-                                <div className="backend--mentors__group--mentorPhoto">
+                                <div className="ux--mentors__group--mentorPhoto">
                                     <img src={brat1} alt=""/>
-                                    <div className="backend--mentors__group--mentorPhoto__fio">
+                                    <div className="ux--mentors__group--mentorPhoto__fio">
                                         <h4>Баланчаев Тукунчо</h4>
                                         <h4>UX/UI Designer</h4>
                                     </div>
@@ -146,10 +114,10 @@ const Ux = () => {
                             </div>
                         </div>
 
-                        <div className="backend--question">
-                            <h1>Чему вы научитесь?</h1>
-                            <div className="backend--question__questionFlex">
-                                <div className="backend--question__questionFlex--icons">
+                        <div className="ux--question">
+                            <h1>{formatMessage({id:"why"})}</h1>
+                            <div className="ux--question__questionFlex">
+                                <div className="ux--question__questionFlex--icons">
                                     <img src={icon1} alt="img"/>
                                     <div></div>
                                     <img src={icon2} alt="img"/>
@@ -160,60 +128,46 @@ const Ux = () => {
                                     <div></div>
                                     <img src={icon5} alt="img"/>
                                 </div>
-                                <div className="backend--question__questionFlex--textQuestion">
+                                <div className="ux--question__questionFlex--textQuestion">
                                     <div>
-                                        <h4>Верстать сайт</h4>
-                                        <p>Детально изучите все возможности современного CSS, научитесь верстать
-                                            адаптивныесайты, которыми удобно пользоваться. Сделаете проекты
-                                            эстетичнее при помощианимаций и переходов.</p>
+                                        <h4>{formatMessage({id:"sait"})}</h4>
+                                        <p>{formatMessage({id:"icon"})}</p>
                                     </div>
                                     <div>
-                                        <h4>Java Script</h4>
-                                        <p>Будете проектировать логику работы сайта. От простого модального окнадо
-                                            асинхронной загрузки данных с сервера и программирования enterprise-
-                                            приложений.Без стресса выучите один из
-                                            самых популярных языков программирования.</p>
+                                        <h4>{formatMessage({id:"notes"})}</h4>
+                                        <p>{formatMessage({id:"script"})}</p>
                                     </div>
                                     <div>
-                                        <h4>Framework</h4>
-                                        <p>С помощью фреймворков вы сможете быстрее разрабатывать сложные
-                                            веб-сервисы, а ещё они эффективнее расходуют ресурсы браузера.
-                                            Вы сами выбираете, что учить — React или Vue..</p>
+                                        <h4>{formatMessage({id:"framework"})}</h4>
+                                        <p>{formatMessage({id:"framework-text"})}</p>
                                     </div>
                                     <div>
-                                        <h4>Работать с GIT</h4>
-                                        <p>Будете сохранять все этапы работы над проектами, чтобы у коллег всегда был
-                                            доступ к коду, а случайные ошибки можно было исправить в два клика</p>
+                                        <h4>{formatMessage({id:"git"})}</h4>
+                                        <p>{formatMessage({id:"work"})}</p>
                                     </div>
                                     <div>
-                                        <h4>Красота в команде</h4>
-                                        <p>Научитесь работать по спринтам и Scrum-методологии. Под руководством
-                                            тимлидавместе  с другими студентами напишете веб-приложение.</p>
+                                        <h4>{formatMessage({id:"beauty"})}</h4>
+                                        <p>{formatMessage({id:"student"})}</p>
                                     </div>
                                 </div>
                             </div>
 
                         </div>
                     </div>
-                    <div className="backend--block">
-                        <div className="backend--block__textCourse">
+                    <div className="ux--block">
+                        <div className="ux--block__textCourse">
                             <span>Курс</span>
-                            <h1>FRONT-END DEVELOPER</h1>
+                            <h1>UX/UI DEVELOPER</h1>
                             <p>
-                                Курс длится 7 месяцев -
-                                6 месяц обучение
-                                1 месяц стажировка
+                                {formatMessage({id:"block"})}
                             </p>
-                            <h1>10 000 cом в месяц</h1>
-                            <a href={"#"}>Записаться</a>
+                            <h1>{formatMessage({id:"price"})}</h1>
+                            <a href={`https://wa.me/${myNumber}?text=%20Саламатсызбы%20мен%20курстар%20%20боюунча малымат алайын дегем%20`}>{formatMessage({id:"enroll"})}</a>
                         </div>
                     </div>
 
                 </div>
-
-
             </div>
-
         </section>
 
     );

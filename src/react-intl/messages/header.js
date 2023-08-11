@@ -3,15 +3,15 @@ import {LOCALES} from "../locales";
 export const Header = {
     [LOCALES.RUSSIAN]:{
         "home":"Главная",
-        "about":"О нас",
-        "course":"Курсы",
+        "aboutH":"О нас",
+        "courseH":"Курсы",
         "rew":"Отзывы",
         "set":"Социальные сети:"
     },
     [LOCALES.KYRGYZ]:{
         "home":"Башкы бет",
-        "about":"Биз жөнүндө",
-        "course":"Курстар",
+        "aboutH":"Биз жөнүндө",
+        "courseH":"Курстар",
         "rew":"Сын-пикирлер",
         "set":"Социалдык тармактар:"
     },

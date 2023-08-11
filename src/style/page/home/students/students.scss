@@ -144,6 +144,14 @@
         }
 
       }
+
+    }
+    &__cards{
+      &--blocks{
+        img{
+          width: 90%;
+        }
+      }
     }
   }
 }
@@ -160,13 +168,13 @@
           display: flex;
           &--cardBlock2{
             position: absolute;
-            bottom: 40px;
-            left: 300px!important;
+            bottom: 20px !important;
+            left: 330px!important;
           }
           &--cardBlock3{
             position: absolute;
-            bottom: 40px;
-            left: 270px!important;
+            bottom: 25px !important;
+            left: 319px!important;
           }
         }
       }
@@ -175,7 +183,7 @@
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .student{
     &__card{
       &--block{
@@ -185,17 +193,20 @@
         }
         &__text{
           display: flex;
+          &--cardBlock{
+            p{
+              width: 240px !important;
+            }
+          }
           &--cardBlock2{
             position: absolute;
-            top: 20px;
-            //bottom: 10px;
+            top: 130px;
             left: 250px!important;
           }
           &--cardBlock3{
             position: absolute;
-            //bottom: 10px;
-            top: 20px;
-            left: 200px!important;
+            top: 160px;
+            left: 240px!important;
           }
         }
 
@@ -204,6 +215,112 @@
   }
 
 }
+@media (max-width: 425px) {
+  .student{
+    &__card{
+      &--block{
+        position: relative;
+        img{
+          width: 90%;
+        }
+        &__text{
+          display: flex;
+          &--cardBlock{
+            h1{
+              padding-top: 10px !important;
+              font-size: 20px !important;
+            }
+            p{
+              font-size: 14px !important;
+            }
+          }
+          &--cardBlock2{
+            position: absolute;
+            top: 120px;
+            left: 190px!important;
+          }
+          &--cardBlock3{
+            position: absolute;
+            top: 160px;
+            left: 160px!important;
+          }
+        }
+
+      }
+    }
+    &__cards{
+      &--blocks{
+        &__texts{
+          &--look{
+            position: absolute;
+            top: 200px;
+            left: 190px!important;
+          }
+        }
+      }
+    }
+
+  }
+
+}
+@media (max-width: 376px) {
+  .student{
+    &__card{
+      &--block{
+        position: relative;
+        img{
+          width: 90%;
+        }
+        &__text{
+          display: flex;
+          &--cardBlock{
+            position: relative;
+            h1{
+              position: absolute;
+              font-size: 16px !important;
+            }
+            p{
+              padding-top: 30px;
+              font-size: 11px !important;
+            }
+          }
+          &--cardBlock2{
+            position: absolute;
+            top: 90px;
+            left: 190px!important;
+          }
+          &--cardBlock3{
+            position: absolute;
+            top: 140px;
+            left: 160px!important;
+          }
+        }
+
+      }
+    }
+    &__cards{
+      &--blocks{
+        &__texts{
+          &--lux{
+            p{
+              font-size: 11px !important;
+              width: 170px !important;
+            }
+          }
+          &--look{
+            position: absolute;
+            top: 180px;
+            left: 190px!important;
+          }
+        }
+      }
+    }
+
+  }
+
+}
+
+
 
 //1440
 //1200

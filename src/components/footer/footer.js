@@ -20,8 +20,8 @@ const Footer = () => {
                             <a>{formatMessage({id:"follow"})}</a>
                         </div>
                         <div>
-                            <a>{formatMessage({id:"course"})}</a>
-                            <a>{formatMessage({id:"review"})}</a>
+                            <a>{formatMessage({id:"course2"})}</a>
+                            <a>{formatMessage({id:"review2"})}</a>
                         </div>
                     </div>
 

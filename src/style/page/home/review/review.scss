@@ -38,3 +38,15 @@
     }
   }
 }
+
+@media (max-width: 425px) {
+  .review {
+    &--group {
+      p {
+        width: 200px !important;
+
+        font-size: 17px !important;
+      }
+    }
+  }
+}

@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: center;
     h1{
-      padding-top: 260px;
+      padding-top: 340px;
       color: #EDEDED;
       font-size: 61px;
       font-weight: 700;
@@ -42,7 +42,7 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   #hero{
     .hero{
       h1{
@@ -53,19 +53,12 @@
 
   }
 }
-
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   #hero{
     .hero{
       h1{
-        font-size: 45px;
+        font-size: 49px;
         font-weight: 600;
-      }
-      p{
-        font-size: 21px;
-        font-weight: 400;
-        width: 600px;
-        height: 50px;
       }
     }
 
@@ -76,7 +69,7 @@
   #hero{
     .hero{
       h1{
-        font-size: 35px;
+        font-size: 37px;
         font-weight: 600;
       }
       p{
@@ -86,9 +79,10 @@
         height: 50px;
       }
       button{
-        width: 157px;
-        height: 46px;
+        width: 177px;
+        height: 56px;
         font-size: 18px;
+        margin-bottom: 150px;
       }
     }
 
@@ -99,20 +93,21 @@
   #hero{
     .hero{
       h1{
-        padding-top: 590px;
-        font-size: 27px;
+        font-size: 29px;
         font-weight: 600;
       }
       p{
-        font-size: 15px;
+        font-size: 20px;
         font-weight: 400;
+        padding: 10px 0;
         width: 300px;
         height: 50px;
       }
       button{
-        width: 87px;
-        height: 26px;
-        font-size: 12px;
+        width: 160px;
+        height: 46px;
+        font-size: 17px;
+        margin-top: 100px;
       }
 
     }
@@ -124,19 +119,42 @@
   #hero{
     .hero{
       h1{
-        font-size: 14px;
+        font-size: 40px;
+        text-align: center;
+        width: 230px;
         font-weight: 600;
       }
       p{
-        font-size: 7px;
+        font-size: 20px;
         font-weight: 400;
-        width: 200px;
-        height: 50px;
       }
       button{
-        width: 77px;
-        height: 20px;
-        font-size: 12px
+        width: 157px;
+        height: 46px;
+        font-size: 19px
+      }
+
+    }
+
+  }
+}
+@media (max-width: 400px) {
+  #hero{
+    .hero{
+      h1{
+        width: 200px;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 600;
+      }
+      p{
+        font-size: 20px;
+        font-weight: 400;
+      }
+      button{
+        width: 157px;
+        height: 46px;
+        font-size: 19px
       }
 
     }
