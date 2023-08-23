@@ -14,6 +14,8 @@ import fon from './../../assets/img/fon.jpg'
 import finalPropsSelectorFactory from "react-redux/es/connect/selectorFactory";
 import {Link} from "react-router-dom";
 import str from "../../assets/img/str.svg";
+import js from "../../assets/img/js.svg";
+import react from "../../assets/img/react.png";
 
 
 const Ux = () => {
@@ -81,6 +83,49 @@ const Ux = () => {
                                         title={formatMessage({id:"shop"})}
                                         content={formatMessage({id:"shop-user"})}
                                     />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="ux--backFlex2">
+                            <div className="ux--backFlex2__blocks2">
+                                <div className="ux--backFlex2__blocks2--detail2">
+                                    <h1>{formatMessage({id:"program"})}</h1>
+                                    <p>{formatMessage({id:"courseFront"})}</p>
+                                    <Accordion
+                                        img={html}
+                                        title="1. Веб - верстка"
+                                        content={formatMessage({id:"pages"})}
+                                    />
+                                    <Accordion
+                                        img={js}
+                                        title="2. JavaScript"
+                                        content={formatMessage({id:"learning"})}
+
+                                    />
+                                    <Accordion
+                                        img={js}
+                                        title="2.  JAVASCRIPT - DOM"
+                                        content={formatMessage({id:"dom"})}
+
+                                    />
+                                    <Accordion
+                                        img={react}
+                                        title="3. React JS"
+                                        content={formatMessage({id:"front-page"})}
+                                    />
+                                </div>
+                                <div className="ux--backFlex2__blocks2--block2">
+                                    <div className="ux--backFlex2__blocks2--block2__textCourse">
+                                        <span>Курс</span>
+                                        <h1>FRONT-END DEVELOPER</h1>
+                                        <p>
+                                            Курс длится 7 месяцев -
+                                            6 месяц обучение
+                                            1 месяц стажировка
+                                        </p>
+                                        <h1>10 000 cом в месяц</h1>
+                                        <a href={`https://wa.me/${myNumber}?text=%20Саламатсызбы%20мен%20курстар%20%20боюунча малымат алайын дегем%20`}>Записаться</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>

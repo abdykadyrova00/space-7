@@ -175,6 +175,65 @@
         }
       }
     }
+    &--backFlex2{
+      display: none;
+      padding-top: 76px;
+      &__blocks2{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        &--detail2{
+          h1{
+            color: #1E1E2F;
+            font-size: 38px;
+            font-weight: 700;
+          }
+          p{
+            color: #1E1E2F;
+            font-size: 30px;
+            font-weight: 600;
+            padding: 20px 0;
+          }
+        }
+        &--block2{
+          position: sticky;
+          top: 100px;
+          height: 100px;
+          width: 332.337px;
+          height: 310px;
+          border-bottom-right-radius: 100px;
+          background: linear-gradient(342deg, #5E59EE 0%, #EB89F5 100%);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &__textCourse{
+            span{
+              color: #FFF;
+              font-size: 18px;
+              font-weight: 400;
+            }
+            h1{
+              padding: 17px 0;
+              color: #FFF;
+              font-size: 20px;
+              font-weight: 700;
+            }
+            p{
+              width: 180px;
+              height: 60px;
+              color: #FFF;
+              font-size: 17px;
+              font-weight: 400;
+            }
+            a{
+              color: #FFF;
+              font-size: 20px;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
 
   }
   .accordion__section {
@@ -241,72 +300,198 @@
 
 }
 
-@media screen and  (max-width:1024px){
-  #backend{
-    .task{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
-        h1{
-          color: #FFF;
-          font-size: 28px;
-          font-weight: 800;
-          text-align: center;
+@media (max-width: 768px) {
+  #ux{
+    .detail_page{
+      p{
+        width: 569px!important;
+      }
+      ul{
+        li{
+          width: 668px;
         }
-    }
-    .backend{
-      &--backFlex__blocks{
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
       }
-    }
-  }
-}
-@media screen and  (max-width: 992px){
-  #backend{
-    .detail--page{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
 
     }
-    .backend{
-      &--backFlex__blocks{
+    &--mentors{
+      &__group{
         display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-      }
-    }
-  }
-}
-
-@media screen and  (max-width: 768px){
-  #course {
-    .course{
-      &--courseFlex{
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        &__cour{
-          width: 100%;
-          position: unset;
+        gap: 45px;
+        &--mentorPhoto{
+          position: relative;
+          &__fio{
+            position: absolute;
+            bottom: 50px;
+            left: 25px;
+            h4{
+              color: #FFF;
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 600;
+            }
+          }
         }
-
-        &__blocks{
-          width: 100%;
-        }
-
       }
-      h1{ width: 100%; text-align: left;}
-
     }
-
+    .accordion__section{
+      width: 650px;
+    }
+    &--question{
+      &__questionFlex{
+        &--icons{
+          margin: 25px 0;
+        }
+        &--textQuestion{
+          div{
+            p{
+              width: 550px!important;
+            }
+          }
+        }
+      }
+    }
+  }
+  #front .front--mentors__group {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+  }
+  #front .front--question__questionFlex--textQuestion div p {
+    width: 550px;
+  }
+  #front .front--question__questionFlex--icons {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
   }
 
-  #course .course h1{ width: 100%; text-align: left;}
+};
+@media (max-width: 576px) {
+  #ux{
+    .detail_page{
+      p{
+        width: 469px!important;
+      }
+      ul{
+        li{
+          width: 428px;
+        }
+      }
 
+    }
+    .accordion__section{
+      width: 460px;
+    }
+  }
+  #front .front--question__questionFlex--textQuestion div p {
+    width: 410px;
+  }
+  #front .front--question__questionFlex--icons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+};
+@media (max-width: 450px) {
+  #ux{
+    .detail_page{
+      h1{
+        font-size: 45px;
+      }
+      p{
+        width: 369px!important;
+        font-size: 20px;
+      }
+      ul{
+        li{
+          width: 250px;
+          font-size: 20px;
+        }
+      }
+
+    }
+    &--diploma{
+      h1{
+        font-size: 1px!important;
+      }
+    }
+    &--mentors{
+      &__group{
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+        &--mentorPhoto{
+          img{
+            width:200px !important;
+          }
+          &__fio{
+            position: absolute;
+            bottom: 50px;
+            left: 25px;
+            h4{
+              color: #FFF;
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+    .accordion__section{
+      width: 360px;
+    }
+  }
+  #front .front--question__questionFlex--textQuestion div p {
+    width: 280px;
+  }
+  #front .front--question__questionFlex--icons {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  #front .front--diploma h1 {
+    padding-top: 125px;
+    color: #1E1E2F;
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+};
+@media (max-width: 375px) {
+  #ux{
+    .detail_page{
+      h1{
+        font-size: 45px;
+      }
+      p{
+        width: 349px!important;
+        font-size: 20px;
+      }
+      ul{
+        li{
+          width: 210px;
+          font-size: 20px;
+        }
+      }
+
+    }
+    .accordion__section{
+      width: 340px;
+    }
+  }
+};
+@media(max-width:1200px){
+  .ux{
+    &--backFlex{
+      display:none;
+    };
+    &--block{
+      display: none!important;
+    };
+    &--backFlex2{
+      display: block!important;
+    };
+  }
 }

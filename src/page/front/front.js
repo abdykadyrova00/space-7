@@ -207,4 +207,4 @@ const Front = () => {
     );
 };
 
-export default Front;
+export default Front

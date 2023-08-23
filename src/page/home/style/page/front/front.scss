@@ -412,7 +412,7 @@
     }
     &--diploma{
       h1{
-        font-size: 3px!important;
+        font-size: 1px!important;
       }
     }
     &--mentors{
@@ -422,7 +422,7 @@
         gap: 45px;
         &--mentorPhoto{
           img{
-            width: 350px!important;
+            width:200px !important;
           }
           &__fio{
             position: absolute;
@@ -449,6 +449,12 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
+  }
+  #front .front--diploma h1 {
+    padding-top: 125px;
+    color: #1E1E2F;
+    font-size: 28px;
+    font-weight: 700;
   }
 
 };
