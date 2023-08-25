@@ -1,0 +1,43 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.container{
+  width: 85%;
+  margin: 0 auto;
+}
+// import
+@import "./../style/header/header";
+//@import "./../style/header/menu";
+@import "./../style/footer/footer";
+
+@import "./../style/page/home/hero/hero";
+@import "./../style/page/home/about/about";
+@import "./../style/page/home/course/course";
+@import "./../style/page/home/students/students";
+@import "./../style/page/home/mentors/mentors";
+@import "./../style/page/home/contact/contact";
+@import "./../style/page/home/review/review";
+
+
+@import "./../style/page/flutter/flutter";
+@import "./../style/page/front/front";
+@import "./../style/page/ux/ux";
+@import "./../style/page/backend/backend";
+// import
+
+
+//
+
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
+// fonts
+
+body,html {
+  font-family: 'Jost', sans-serif;
+  background: #F8F4F1;
+}

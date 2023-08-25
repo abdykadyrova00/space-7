@@ -1,0 +1,36 @@
+#mentor {
+  background: #F8F4F1;
+
+  .mentor {
+    h1 {
+      padding-top: 140px;
+      color: #000;
+      font-size: 38px;
+      font-weight: 700;
+      text-align: center;
+    }
+    &--mentorBlock {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      position: relative;
+      margin: 30px 10px;
+      outline: none;
+
+      img {
+        width: 350px;
+        height: 390px;
+      }
+      &__textMentor {
+        position: absolute;
+        bottom: 10px;
+        left: 20px;
+        color: #FFF;
+        font-size: 25px;
+        font-weight: 600;
+      }
+    }
+
+
+  }
+}

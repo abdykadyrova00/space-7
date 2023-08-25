@@ -1,0 +1,165 @@
+#hero{
+  background: url("./../../../../assets/img/hero.png")no-repeat center/cover;
+  min-height: 100vh;
+  .hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1{
+      padding-top: 340px;
+      color: #EDEDED;
+      font-size: 61px;
+      font-weight: 700;
+    }
+    p{
+      color: #F8F4F1;
+      text-align: center;
+      font-size: 21px;
+      font-weight: 400;
+      width: 696px;
+      height: 50px;
+    }
+    button
+    {
+      margin-top: 47px;
+      width: 217px;
+      height: 56px;
+      border: none;
+      outline: none;
+      border-radius: 40px;
+      color: #F8F4F1;
+      font-size: 22px;
+      font-weight: 400;
+      background: transparent;
+      border: 1px solid #CFD8DC;
+    }
+    button:hover{
+      transition: .5s;
+      transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  #hero{
+    .hero{
+      h1{
+        font-size: 51px;
+        font-weight: 600;
+      }
+    }
+
+  }
+}
+@media (max-width: 992px) {
+  #hero{
+    .hero{
+      h1{
+        font-size: 49px;
+        font-weight: 600;
+      }
+    }
+
+  }
+}
+
+@media (max-width: 768px) {
+  #hero{
+    .hero{
+      h1{
+        font-size: 37px;
+        font-weight: 600;
+      }
+      p{
+        font-size: 18px;
+        font-weight: 400;
+        width: 400px;
+        height: 50px;
+      }
+      button{
+        width: 177px;
+        height: 56px;
+        font-size: 18px;
+        margin-bottom: 150px;
+      }
+    }
+
+  }
+}
+
+@media (max-width: 576px) {
+  #hero{
+    .hero{
+      h1{
+        font-size: 35px;
+        font-weight: 600;
+        width: 400px;
+        text-align: center;
+      }
+      p{
+        font-size: 20px;
+        font-weight: 400;
+        padding: 10px 0;
+        width: 300px;
+        height: 50px;
+      }
+      button{
+        width: 190px;
+        height: 54px;
+        font-size: 17px;
+        margin-top: 100px;
+      }
+
+    }
+
+  }
+}
+
+@media (max-width: 450px) {
+  #hero{
+    .hero{
+      h1{
+        font-size: 35px;
+        text-align: center;
+        width: 270px;
+        font-weight: 600;
+      }
+      p{
+        font-size: 20px;
+        font-weight: 400;
+      }
+      button{
+        width: 187px;
+        height: 56px;
+        font-size: 19px
+      }
+
+    }
+
+  }
+}
+@media (max-width: 400px) {
+  #hero{
+    .hero{
+      h1{
+        width: 270px;
+        text-align: center;
+        font-size: 35px;
+        font-weight: 600;
+      }
+      p{
+        font-size: 20px;
+        font-weight: 400;
+      }
+      button{
+        width: 167px;
+        height: 46px;
+        font-size: 19px
+      }
+
+    }
+
+  }
+}
