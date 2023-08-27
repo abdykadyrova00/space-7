@@ -39,8 +39,12 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 450px) {
   .review {
+    h1{
+      font-size: 27px!important;
+      width: 300px!important;
+    }
     &--group {
       p {
         width: 200px !important;

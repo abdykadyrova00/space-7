@@ -36,12 +36,12 @@
           transition-duration: .25s;
         }
         h3:hover{
-          background: rgba(225, 215, 202, 0.91);
+          background: #ece3e3;
         }
         p:hover{
-          background: rgba(169, 169, 190, 0.77);
+          background: #ece3e3;
           transition: .25s;
-          width: 310px;
+          width: 200px;
           height: 50px;
           border-radius: 10px;
           border: 2px solid rgba(38, 38, 38, 0.52);
@@ -217,8 +217,16 @@
         align-items: center;
 
         &__cour{
-          width: 100%;
           position: unset;
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+          gap: 15px;
+          p{
+            background: #ece3e3;
+            border-radius: 20px;
+            padding: 5px 10px;
+          }
         }
 
         &__blocks{

@@ -7,7 +7,7 @@
       padding-top: 150px;
     }
     h1{
-      padding-top: 224px;
+      padding-top: 134px;
       padding-left: 30px;
       color: #FFF;
       font-size: 65px;
@@ -441,12 +441,12 @@
     }
   }
   #front .front--question__questionFlex--textQuestion div p {
-    width: 280px;
+    width: 250px!important;
   }
   #front .front--question__questionFlex--icons {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 45px!important;
   }
 
 };
