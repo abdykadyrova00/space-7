@@ -47,10 +47,23 @@
     }
     &--group {
       p {
-        width: 200px !important;
+        width: 270px !important;
 
         font-size: 17px !important;
       }
     }
+  }
+  #student .student--h1 {
+    padding-top: 70px;
+    color: #1E1E2F;
+    font-size: 38px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  #student .student--h1 {
+    padding-top: 70px;
+    color: #1E1E2F;
+    font-size: 30px;
   }
 }
